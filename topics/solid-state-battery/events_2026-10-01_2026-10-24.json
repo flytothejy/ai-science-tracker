@@ -196,7 +196,7 @@
    "new": "변동 없음",
    "level": "material",
    "verification": "company_claim",
-   "caveat_ko": "이번 달 최다 보도(약 60건, 대부분 한국 매체 동일 보도자료). 소재 협력 MOU이며 일정·성능 수치 신규 정보 없음. 2027 목표는 8월 baseline에 이미 반영.",
+   "caveat_ko": "이번 달 최다 보도(약 60건, 대부분 한국 매체 동일 보도자료). 소재 협력 MOU이며 일정·성능 수치 신규 정보 없음. 2027 목표는 8월 baseline에 이미 반영. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMiS0FVX3lxTE4xZ0V6M05yajU2a0V6LTVXY2RUVTRqdFRsNVh2NEs2TVZsRTNEcHNUQkZGbnRDMXFDRENPVHp4bTBWemRyajBKQ3VzNA",
     "gnews:CBMiWkFVX3lxTE9vWXlfM21xaEkwdEhPa0RITHNxNVNDQndhQ2ItZDlyVlc1b01DcjJyZEpGcE01dEVVMkI4MDFDM1doNzItNG5Id3FjZzU1cmQxN3ZaRjBBdUFtZw",
@@ -283,7 +283,7 @@
     "gnews:CBMiS0FVX3lxTE5YM041TDBNOUVIMmhHRWdtRUZuci1Gc3J1ZWtrVDB1U3JCT3o3ajB0WGhKcUJsYTgzTGY5T2hWQXpwR2RXZkhQd2tKQQ"
    ],
    "item_count": 83,
-   "primary_url": "https://www.yna.co.kr/"
+   "primary_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4xZ0V6M05yajU2a0V6LTVXY2RUVTRqdFRsNVh2NEs2TVZsRTNEcHNUQkZGbnRDMXFDRENPVHp4bTBWemRyajBKQ3VzNA?oc=5"
   },
   {
    "event_id": "e8",
@@ -331,7 +331,7 @@
    "new": "변동 없음(독립 검증된 전고체 저온 수치로 채택 안 함)",
    "level": "pouch_lab",
    "verification": "company_claim",
-   "caveat_ko": "PCMag 등은 양산·에너지 밀도·수명 공개가 없다고 지적. 시험 주체·셀 사양 불명, 전고체 여부 자체가 논쟁 중. 기록으로 채택하지 않음.",
+   "caveat_ko": "PCMag 등은 양산·에너지 밀도·수명 공개가 없다고 지적. 시험 주체·셀 사양 불명, 전고체 여부 자체가 논쟁 중. 기록으로 채택하지 않음. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMiqwFBVV95cUxNaTVNSDlMU2MzVkl5X0ZkZHc1LTlLWFFaSHp6Q2EwM1p2RGhjek5KX2podk1QR1NpRHEySUxlSW1jdkVFSEkyMkdseFlXWF90WU1ZV1JOVEFlWF9OMm1KQkZtQ28waEFpT2dtNGdSQzNsandfSjNTcDBUNkV1NmtzX3EwLTB4elpHdndhT0RFNVBXTjBQaktDbmlwQmtvZWN0eHBhSkl3OWF6Qk0",
     "gnews:CBMie0FVX3lxTE1uVi1WSW1fc0x1eXVUdDJhYzFsWUpLbG1WVk11ZlNYMnR1VUlUSXQ3NDJ1OWlfTGlOaGd6ZGF6RUNkcEhHcWFEeGg3TF8tVEkwbTItSF85SGNUWHN3ejFEX21Nc1JROW5Vd2F6bUN0T1FZUWUzeVhsampIWQ",
@@ -339,7 +339,7 @@
     "gnews:CBMinAFBVV95cUxNWmpldWpaaXY3ZXFXRFlaQmxnLVBDSDZBQWlDRUNUS3c3QllUMFY0bjhVWDh0T1NpQW1tNXBWUmhoaXJlLUdqU0pDT0tEbWtoWGUyS2lKYnE0UHFrU09UNUZNVnZDeTg1MjdxN0VmU1NRcHFNYVFjTnZsMGY3RGNwcUw0OFhBU0MxMDAwRUR0b0MwTzJha2R0Wm1pUUc"
    ],
    "item_count": 4,
-   "primary_url": "https://www.pcmag.com/"
+   "primary_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaTVNSDlMU2MzVkl5X0ZkZHc1LTlLWFFaSHp6Q2EwM1p2RGhjek5KX2podk1QR1NpRHEySUxlSW1jdkVFSEkyMkdseFlXWF90WU1ZV1JOVEFlWF9OMm1KQkZtQ28waEFpT2dtNGdSQzNsandfSjNTcDBUNkV1NmtzX3EwLTB4elpHdndhT0RFNVBXTjBQaktDbmlwQmtvZWN0eHBhSkl3OWF6Qk0?oc=5"
   },
   {
    "event_id": "e10",
@@ -384,7 +384,7 @@
    "new": "변동 없음",
    "level": "material",
    "verification": "company_claim",
-   "caveat_ko": "\"10배\"는 기판 포함 기존 박막형 전고체 대비로 보이며 리튬이온 대비가 아님. 셀 수준·Wh/kg·Wh/L 절대치 미제시. 소형 박막 전지 영역이라 baseline 지표와 비교 불가.",
+   "caveat_ko": "\"10배\"는 기판 포함 기존 박막형 전고체 대비로 보이며 리튬이온 대비가 아님. 셀 수준·Wh/kg·Wh/L 절대치 미제시. 소형 박막 전지 영역이라 baseline 지표와 비교 불가. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMingFBVV95cUxQMUhIWFhIdTd0dlFrRUNvbnlodUEtN29fOHRKcEMyMkpDU0hyc0hCT3FTNjZZWXZGR216c1NoN2lKT2lKZVBSd21DdGQ0NFppdmlOcEF1Sy1iRGp3N0FwajhfWG1BbUZlTG93WlV5RTFuVlYzbV83WEc0SnIxOGZzUFdNMmVYUTU0QWFVRGRHQVktNHlVbUR5aWx0ZVVBQQ",
     "gnews:CBMidkFVX3lxTE9TVUdhOXJleU5KaHUxMkxxaEJodHBKOGl6MGdZc3VtRTVzNm91TzJmcXBHV3BvMHJvNGh4V1hqcjNsUER0SDZDX2w3ZFAzSmo3eU5SU00tc0kzeTZmT3RYVUtOdnBscEp6Y2xLMENNNldzVjVMc2c",
@@ -396,7 +396,7 @@
     "gnews:CBMiWkFVX3lxTE80WFZZTW1ib3ZTQjU3VzlaQmJzS3Z3cUVVcU9hckpyYTRuSGVoZnYtQzRlX0VQVGdXV3VvQlpEYUxjRThmOC1xdW5hdHV3dklsY1lHS3hVekE1QQ"
    ],
    "item_count": 8,
-   "primary_url": "https://www.sedaily.com/"
+   "primary_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMUhIWFhIdTd0dlFrRUNvbnlodUEtN29fOHRKcEMyMkpDU0hyc0hCT3FTNjZZWXZGR216c1NoN2lKT2lKZVBSd21DdGQ0NFppdmlOcEF1Sy1iRGp3N0FwajhfWG1BbUZlTG93WlV5RTFuVlYzbV83WEc0SnIxOGZzUFdNMmVYUTU0QWFVRGRHQVktNHlVbUR5aWx0ZVVBQQ?oc=5"
   },
   {
    "event_id": "e12",
@@ -410,7 +410,7 @@
    "new": "변동 없음",
    "level": "coin_cell",
    "verification": "company_claim",
-   "caveat_ko": "우주용 특수 셀의 극저온 시험이며 에너지 밀도·수명 수치가 없고 EV 적용은 가능성 수준(기사 제목의 EV 언급은 추측).",
+   "caveat_ko": "우주용 특수 셀의 극저온 시험이며 에너지 밀도·수명 수치가 없고 EV 적용은 가능성 수준(기사 제목의 EV 언급은 추측). (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMirwFBVV95cUxQSk5qTUN0YmhEbWhOeFVpTy1fYTZHWWdJNmJkX2FWcWhIRnFocXlFWDlWS2RzNUNzZ2hhTDNsNzhkOVR5ZnlwQ1FQeFNYbHZDSndydjVvVzZjZDM1c0lwSkpMbkFmVDlEMEd2SHY1NnJEdy1nOUhtX0tHdmRjbTJiUWQwVHJpZDE0cEtqSzF2a09WN2t5MHhfT2VvZW92dzRuOFhWSERodGdsRW1lX20w",
     "gnews:CBMiekFVX3lxTE9veGdBaVp4Y0dWX2FzNGlTMGd3ck9reE5CMHFyM1VYX3ZxWXRpTjd0dThRQnc0WlplTDZndnZWQVJHOEpEYWxORUlMd3BJbkY1Y2VpbmtsYVZERHlfNm5XQ3BCMF81Tzd4OGwtNnN2dlZNVl9LeVBQelV3",
@@ -421,7 +421,7 @@
     "gnews:CBMihwFBVV95cUxPdDBVTkhIbHV5Q21XNV9ISzdOV0o0cjhfNW5wbXNJd0tCSElVY0hOM28zd095MmtUYnVLODFVWkFFRU8xaEpXWm4tQkVpZGw5UllpX0lRNFNDMmlia3N5aGZwUFl4UzBQcFRJNFJyb1U4UkJ5aDFZR05LTEVjcWhWZ0xUZUhpaUE"
    ],
    "item_count": 7,
-   "primary_url": "https://www.nasa.gov/"
+   "primary_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSk5qTUN0YmhEbWhOeFVpTy1fYTZHWWdJNmJkX2FWcWhIRnFocXlFWDlWS2RzNUNzZ2hhTDNsNzhkOVR5ZnlwQ1FQeFNYbHZDSndydjVvVzZjZDM1c0lwSkpMbkFmVDlEMEd2SHY1NnJEdy1nOUhtX0tHdmRjbTJiUWQwVHJpZDE0cEtqSzF2a09WN2t5MHhfT2VvZW92dzRuOFhWSERodGdsRW1lX20w?oc=5"
   },
   {
    "event_id": "e13",
@@ -435,7 +435,7 @@
    "new": "변동 없음",
    "level": "pilot_line",
    "verification": "company_claim",
-   "caveat_ko": "공급 계약·MoU로 생산 규모·일정 수치 없음. Mercedes 양산 일정도 미발표.",
+   "caveat_ko": "공급 계약·MoU로 생산 규모·일정 수치 없음. Mercedes 양산 일정도 미발표. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMiogFBVV95cUxNdXg3S3dVYVNjTF85YVNXTjlReUdiaDBTaklGZnFBTkZVTU1kdkdOWUgySThjMFFNVmRkUzlGMkluX25fTjNXVHYzSGVtZWZ6TmxiUWpSUnBhMlJmYXpDUEk0eTliaWFIUGJrc3ZZVUUzR29UT0cwUklXY0stVEpBYVVsTk9aSTNQQlJlbDRwU3JzNUFWM0Zwb29XZEY5QzA3Z2c",
     "gnews:CBMigAJBVV95cUxOWWxPWVFlRW9hajFxZTgyVlN5ZnJFTWY4X3R3ODlCWW90OEZXei1oZEN0aFdFSFR4V285UVFCSXF6WGJLNU9Ba252d1NjUjI0RnQ5LXdOb3V1cGVSUzJXRTQ2ckJyQWxILVdrT3VldDMwTF9VNmt5QS1ZVXdSbU1kTEd3M25YUUVjRzF6VWFmS1Q0NUI2bnZmdjQ1MnZzaTZkNDBleG5xaDVTU0Zud0xkeS1EYUZzaWd1SFFrUHdzcjk3VmhidWNvZS1jZ2pXb1RTNUlCbWlKMGxSTlM3WUJ3Z3BDeWNaUGhCZVlYaXFaZ3hua3JNN0tuV293eUQ5RTlo",
@@ -449,7 +449,7 @@
     "gnews:CBMirgFBVV95cUxNQ2d1azlnZ1RLdF81amdQY05pemt4NTY5cUxJcDVkdml3eDRKOXhFdTFJX1BJYWJqaHdkcDB2R2RDLThUNDhxRG1qZE5nSi1uQjJfb3BVdlhWbEN2Vm83TDZlWFRsS1g2ek9vbGFGOGxkNVM4bjZmY1MwbGhNdGZUWUNPNDJGd2pEcVRGTWY4aEc5eXdYdm9YVmU2ZGdBdWJ6cG5MVXU2aGJ4blpRRGc"
    ],
    "item_count": 10,
-   "primary_url": "https://www.thelec.net/"
+   "primary_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdXg3S3dVYVNjTF85YVNXTjlReUdiaDBTaklGZnFBTkZVTU1kdkdOWUgySThjMFFNVmRkUzlGMkluX25fTjNXVHYzSGVtZWZ6TmxiUWpSUnBhMlJmYXpDUEk0eTliaWFIUGJrc3ZZVUUzR29UT0cwUklXY0stVEpBYVVsTk9aSTNQQlJlbDRwU3JzNUFWM0Zwb29XZEY5QzA3Z2c?oc=5"
   },
   {
    "event_id": "e14",
@@ -463,7 +463,7 @@
    "new": "변동 없음",
    "level": "automotive_sample",
    "verification": "company_claim",
-   "caveat_ko": "콘셉트카 사양이며 셀 공급자·실측 없음. 화제성만 높고 상태 변화 없음.",
+   "caveat_ko": "콘셉트카 사양이며 셀 공급자·실측 없음. 화제성만 높고 상태 변화 없음. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMiugFBVV95cUxNaWo5enFkVzZ4Z2V2eGlZM3lwVXh1b1VsRXRvbGRLTVhMcVBkbnhiR1JkZHFDTDFhNHJKZXRSdXFNQVBCQU9UclpPbnczU3dTMGxWZjF4REpHZEhyeUhob2JIaDU1V0ZobHozOUV6amRMaENUU1UzR0JBMXFnV3g0d0EyNy1WUDY1S2sxWFVoUndleXJMX1Jmb290dVJtbGt2WU1ITmNoX1lfSFNUbkU0YjNscW5hRXdQeFE",
     "gnews:CBMijAFBVV95cUxPUkZ4ak90STA0OUMxVzAzSDZMQ3NNQ2JKNGQ3SUdqVGpQWThIVC0zUnZMcUtZSEhKbUgtSVBudEtQTDJ6LVg0ZlRlM1pzLUswbEdUZmFjemRMMjRDX3JFZXdqZTN6bUlTbFVXZEUyOWNmVUVndXhjcnd6ekpNLU5ma0dYTF91aHFpTVpJMA",
@@ -483,7 +483,7 @@
     "gnews:CBMiY0FVX3lxTE5MSlM5Z3l3aGpMSTFCZUVGWXVFYktJYkZOazh6dms4QWprWEx2TFM1TTJSZlM0cGpSRVc4VjRwTFpFY0w4YjhZSV9UUHRYMEFmQVRqcGtyMWZtM2JUWFNOYnR0dw"
    ],
    "item_count": 16,
-   "primary_url": "https://www.insideevs.com/"
+   "primary_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaWo5enFkVzZ4Z2V2eGlZM3lwVXh1b1VsRXRvbGRLTVhMcVBkbnhiR1JkZHFDTDFhNHJKZXRSdXFNQVBCQU9UclpPbnczU3dTMGxWZjF4REpHZEhyeUhob2JIaDU1V0ZobHozOUV6amRMaENUU1UzR0JBMXFnV3g0d0EyNy1WUDY1S2sxWFVoUndleXJMX1Jmb290dVJtbGt2WU1ITmNoX1lfSFNUbkU0YjNscW5hRXdQeFE?oc=5"
   },
   {
    "event_id": "e15",
@@ -497,12 +497,12 @@
    "new": "표준 제정(성능 기록 아님)",
    "level": "material",
    "verification": "company_claim",
-   "caveat_ko": "표준은 \"전고체\" 정의 혼선을 줄일 수 있으나 기록·단계 지표는 아님. 2028-01 시행. GBT 사례에서 보듯 표준 적합이 곧 성능 검증은 아님.",
+   "caveat_ko": "표준은 \"전고체\" 정의 혼선을 줄일 수 있으나 기록·단계 지표는 아님. 2028-01 시행. GBT 사례에서 보듯 표준 적합이 곧 성능 검증은 아님. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMiqAFBVV95cUxNY21JdmRVU1NONktrUE1hbXRzdDJWQkRjWFh4LTU4R2RNVms2bTNCX0VEcFhPVVNySzQtSjJQYmJEbjZDeUZ4Um0xSWhEY2UxTUVUeE4xb29POUdtWmFMT1RKRGtKR0h6ajB3aFFTLUdlRmhYTVhhc3pSazR0WjJaTG9PcTI0Qkl6N3BzOEdBWFRaUWt5LXFYM0NhMFRuRjRvX0p3SGpkQjU"
    ],
    "item_count": 1,
-   "primary_url": "https://www.mpr-china.com/"
+   "primary_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY21JdmRVU1NONktrUE1hbXRzdDJWQkRjWFh4LTU4R2RNVms2bTNCX0VEcFhPVVNySzQtSjJQYmJEbjZDeUZ4Um0xSWhEY2UxTUVUeE4xb29POUdtWmFMT1RKRGtKR0h6ajB3aFFTLUdlRmhYTVhhc3pSazR0WjJaTG9PcTI0Qkl6N3BzOEdBWFRaUWt5LXFYM0NhMFRuRjRvX0p3SGpkQjU?oc=5"
   },
   {
    "event_id": "e16",
@@ -548,7 +548,7 @@
    "new": "변동 없음",
    "level": "production",
    "verification": "company_claim",
-   "caveat_ko": "원료 설비이며 셀 성능·비용 수치는 없음. 채산성은 \"검증 시험대\"라는 보도.",
+   "caveat_ko": "원료 설비이며 셀 성능·비용 수치는 없음. 채산성은 \"검증 시험대\"라는 보도. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMiY0FVX3lxTFBwbW1HRWdJcWljTk5HVUgwdFZJM1JnaTJyZDhoQVFfaWNtUXZ3OElPbzFCeFU2M1A1OXlfZHEzQmk1Z0pPNTMwZWVkdGdab3hpZDdTV3Ywdk9UakFXakJ2a1pwUQ",
     "gnews:CBMiaEFVX3lxTE9ZWW5qaG1pZE9GTzllVV9PU1RYX3I1bE9YekY5Tk1lLTROeGhrclFwWlZFMzlHUDhUN0xVV3lKVHktMTd1TlF5eFlBVzFXYnZFdDVGVGZOTDZZTV9aUV9xNkM0RVVXNmhQ",
@@ -559,7 +559,7 @@
     "gnews:CBMicEFVX3lxTE9OY29pblZHeHBCQW9lS1FwUlpiSThhVDlDQVFLN1dKWTMyejk3NFVQY1V3d25aZUF0QkVGb1ZucEhyUEI3eTgyZlRxczgwZk1LUDRJREZoQ0pZMENUeWN5NGVLaTJadk9sS2s5THdOaUw"
    ],
    "item_count": 7,
-   "primary_url": "https://www.etoday.co.kr/"
+   "primary_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBwbW1HRWdJcWljTk5HVUgwdFZJM1JnaTJyZDhoQVFfaWNtUXZ3OElPbzFCeFU2M1A1OXlfZHEzQmk1Z0pPNTMwZWVkdGdab3hpZDdTV3Ywdk9UakFXakJ2a1pwUQ?oc=5"
   },
   {
    "event_id": "e18",
@@ -573,7 +573,7 @@
    "new": "변동 없음",
    "level": "lab",
    "verification": "company_claim",
-   "caveat_ko": "신규 사실 없는 해설·유튜브성 과장(도요타 \"2,500마일/5분 충전\"은 1차 자료 확인 불가). 삼성SDI 로봇(휴머노이드) 적용 가능성은 보도 해석 수준.",
+   "caveat_ko": "신규 사실 없는 해설·유튜브성 과장(도요타 \"2,500마일/5분 충전\"은 1차 자료 확인 불가). 삼성SDI 로봇(휴머노이드) 적용 가능성은 보도 해석 수준. (primary_url은 1차 자료 미확인으로 뉴스 항목 링크)",
    "item_ids": [
     "gnews:CBMihgFBVV95cUxPM1VtbjVJUmltb0o2R2xpLTluQ29rdURsSjlqOVVwUVpGcFZOR1VyNURoODVRemtzeXFRdzRsblZWOFNuQVhJV09VRGdFYUVMWjN5czZrZEVJVGF0UnlGR04wcTRfUlBGdDZGNUkyZmxJTDdLSVg0UTVEWlV2eDJlaUZhek9Tdw",
     "gnews:CBMioAFBVV95cUxQMU5JYkszdWZBdXFqZVlubXU2UlNTRXhaX3ZMX3pYbXRZYVdmZzNoQkFxenNkaGE3cEdJenpGcE1mLThSNmwxY2ZNMU95ckRaZzdwTVlSVmF1OVdTQ2c0OGIxMkNZdGdOVkplLUhRQnVraVNieU8tdXp1UTNYM0FiMGhGRVdPOFpPZng0UXFvd2U2cXc2dlhzSlBKVlAwaWF4",
@@ -594,7 +594,7 @@
     "gnews:CBMiXkFVX3lxTFBCMWJnWWtTSVNsYjRjWmlMdDJMUDRQNC1mOUU4eU9RdTByQ0Q1OFo4SFQtWHF6eGhtLWdzbDdOTlFULWdWNEFjRTZOcmM0VElFMk9vWkt1TUhJRDA2R0E"
    ],
    "item_count": 17,
-   "primary_url": "https://insideevs.com/"
+   "primary_url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPM1VtbjVJUmltb0o2R2xpLTluQ29rdURsSjlqOVVwUVpGcFZOR1VyNURoODVRemtzeXFRdzRsblZWOFNuQVhJV09VRGdFYUVMWjN5czZrZEVJVGF0UnlGR04wcTRfUlBGdDZGNUkyZmxJTDdLSVg0UTVEWlV2eDJlaUZhek9Tdw?oc=5"
   }
  ],
  "searches_used": 11,
