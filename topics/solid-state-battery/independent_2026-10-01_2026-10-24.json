@@ -1,0 +1,67 @@
+{
+  "topic": "solid-state-battery",
+  "window": "2026-10-01/2026-10-24",
+  "coverage_note": "Search tooling surfaced few October-dated primary sources; list is incomplete. Dongfeng October unveiling and Chery/Panasonic Q4 shipments could not be confirmed as having happened inside the window.",
+  "developments": [
+    {
+      "date": "2026-10-21",
+      "who": "QuantumScape",
+      "what": "Q3 2026 shareholder letter: Eagle Line (inaugurated Feb 2026) described as fully operational, producing increased QSE-5 volumes; first Honda customer billings; first QSAS (defense/aviation/telecom) billings with QSE-5 samples shipped; Q3 customer billings $9.8M; 100-MWh commercial cell line with Muehlbauer targeted for start of production in 2028; thermal stability validated above 300C in customer and third-party tests. No new delays reported. Letter does not mention B-samples or Cobra status. PowerCo license still contingent on unmet technical milestones with no date. Roadmap beyond QSE-5 to be presented 2026-11-11 in Kyoto.",
+      "why_it_matters": "Commercialization stage change from pilot to paid sample revenue for a leading Western solid-state developer, but revenue is tiny and commercial-scale production is 2028, with PowerCo milestone uncertainty.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526427862/qs-ex99_1.htm",
+      "significance": "medium"
+    },
+    {
+      "date": "2026-10-08",
+      "who": "QuantumScape",
+      "what": "Launched QS PowerBlock for AI data centers; company-reported testing shows 4x power density and 5x longer runtime vs OCP reference spec for conventional Li-ion systems.",
+      "why_it_matters": "New non-automotive market entry; but performance figures are company-reported against a reference spec, not an independent cell-level comparison.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001811414/000119312526427862/qs-ex99_1.htm",
+      "significance": "low"
+    },
+    {
+      "date": "2026-10-10",
+      "who": "10jqka / Securities Star (China market summary)",
+      "what": "Summary states Dongfeng began mass-producing 350 Wh/kg solid-liquid cells in Sept 2026 and that IM L6 uses semi-solid cells with claimed 1,002 km CLTC range; CATL full-scale all-solid-state deployment at least five years away (CATL CMO Ni Jun, Sept); Samsung SDI Ulsan mass production 2H 2027; Toyota small-batch installation 2028 (Lexus first); GGII: China planned solid-state investment above 50B yuan in H1 2026.",
+      "why_it_matters": "Useful state-of-play snapshot: semi-solid is shipping, true all-solid-state remains 2027 small batch, ~2030 scale. Secondary aggregator, not primary; the Dongfeng 'mass production began in Sept' claim conflicts with Dongfeng's own timeline (unveil Oct, Q4 vehicle installation).",
+      "source_url": "https://news.10jqka.com.cn/20261010/c680550160.shtml",
+      "significance": "low"
+    }
+  ],
+  "context_just_before_window": [
+    {
+      "date": "2026-09-09",
+      "who": "Dongfeng",
+      "what": "Said it will unveil its 350 Wh/kg battery in October with vehicle installation in Q4 (slip from Sept 2026 mass-production target); now officially called solid-liquid hybrid, not solid-state. Claims 1,000+ km, 170C thermal chamber pass, >72% energy at -30C; 100 demo vehicles by end-2026, 50,000 vehicles in 2027.",
+      "source_url": "https://cnevpost.com/2026/09/09/dongfeng-unveil-hybrid-solid-liquid-battery-oct-2026"
+    },
+    {
+      "date": "2026-09-24",
+      "who": "SMM weekly",
+      "what": "Ion Energy Wuhan base entered production Sept 21 with 51Ah cell claimed 520 Wh/kg (unverified); Panasonic Energy solid-state cells rated to 150C with samples shipping Oct-Dec 2026; Chery solid-liquid battery in vehicles Q4 2026.",
+      "source_url": "https://news.metal.com/newscontent/104133997-solid-state-battery-weekly-li2s-production-line-construction-accelerates-while-cost-contradiction-remains-unresolved"
+    }
+  ],
+  "overhyped": [
+    {
+      "claim": "Dongfeng '350 Wh/kg solid-state battery, 1,000 km range, mass production in 2026'",
+      "reason": "Dongfeng itself now calls it solid-liquid hybrid (semi-solid, electrolyte roughly 5-10% liquid). Mass-production date slipped from Sept to an October unveiling and Q4 installation. Performance is company-stated, from a 0.2 GWh pilot line, no independent test.",
+      "source_url": "https://cnevpost.com/2026/09/09/dongfeng-unveil-hybrid-solid-liquid-battery-oct-2026"
+    },
+    {
+      "claim": "Ion Energy 520 Wh/kg, 6-minute charge, 3,500 cycles 'solid-state' 51Ah cell entering production",
+      "reason": "Single-source, company-reported combination of record energy density, ultrafast charge and long life; no independent verification or chemistry disclosure seen, and the stated plant capacity (~0.25 GWh) is pilot scale.",
+      "source_url": "https://news.metal.com/newscontent/104133997-solid-state-battery-weekly-li2s-production-line-construction-accelerates-while-cost-contradiction-remains-unresolved"
+    },
+    {
+      "claim": "Donut Lab solid-state battery test results (110% capacity at 80C, etc.)",
+      "reason": "Independent tests are narrow (single temperature/charge tests); experts noted vacuum loss and pouch swell after the 100C test, and energy density and chemistry remain unverified. Date of coverage not confirmed inside the window.",
+      "source_url": "https://insideevs.com/news/788870/donut-lab-solid-state-battery-excessive-swell/"
+    },
+    {
+      "claim": "Headline lab/cathode numbers (e.g. 400+ Wh/kg oxide-route or ultra-high-nickel cells) as solid-state breakthroughs",
+      "reason": "Lab-scale, small-cell results without cell-level format, pressure and cycle conditions; not commercialization evidence.",
+      "source_url": "https://news.metal.com/newscontent/104133997-solid-state-battery-weekly-li2s-production-line-construction-accelerates-while-cost-contradiction-remains-unresolved"
+    }
+  ]
+}
