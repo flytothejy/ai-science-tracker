@@ -1,0 +1,130 @@
+{
+  "run_id": "2026-01-01_2026-01-31",
+  "since": "2026-01-01",
+  "until": "2026-01-31",
+  "ran_at": "2026-10-24T06:56:32+00:00",
+  "environment": "github-actions",
+  "candidates_total": 206,
+  "sources": [
+    {
+      "source": "arxiv",
+      "ok": true,
+      "requests": 2,
+      "status_counts": {
+        "200": 2
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 90,
+      "candidates": 48,
+      "notes": [
+        "math_x_ai: totalResults=30",
+        "ai_x_openproblems: totalResults=60"
+      ],
+      "seconds": 7.9
+    },
+    {
+      "source": "openalex",
+      "ok": false,
+      "requests": 2,
+      "status_counts": {
+        "200": 1,
+        "401": 1
+      },
+      "retries": 0,
+      "failures": [
+        "HTTP 401 https://api.openalex.org/works?filter=from_publication_date%3A2026-01-01%2Cto_publication_date%3A2026-01-31%2Cprimary_topic.field.id%3A26&search=%22large+langua"
+      ],
+      "items_seen": 200,
+      "candidates": 57,
+      "notes": [
+        "count=2074"
+      ],
+      "seconds": 3.1
+    },
+    {
+      "source": "openai_news",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 1318,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2015-12-11"
+      ],
+      "seconds": 0.1
+    },
+    {
+      "source": "deepmind_blog",
+      "ok": false,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [
+        "parse error https://deepmind.google/blog/rss.xml: not well-formed (invalid token): line 1, column 0"
+      ],
+      "items_seen": 0,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: none",
+        "BACKFILL GAP: feed does not reach back to 2026-01-01"
+      ],
+      "seconds": 0.2
+    },
+    {
+      "source": "quanta",
+      "ok": true,
+      "requests": 30,
+      "status_counts": {
+        "200": 30
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 150,
+      "candidates": 1,
+      "notes": [
+        "oldest item reached: 2025-12-16"
+      ],
+      "seconds": 18.2
+    },
+    {
+      "source": "tao_blog",
+      "ok": true,
+      "requests": 2,
+      "status_counts": {
+        "200": 1,
+        "404": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 4,
+      "candidates": 3,
+      "notes": [
+        "oldest item reached: 2026-01-06"
+      ],
+      "seconds": 0.3
+    },
+    {
+      "source": "erdos_db",
+      "ok": true,
+      "requests": 3,
+      "status_counts": {
+        "200": 3
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 1179,
+      "candidates": 98,
+      "notes": [
+        "replay diff c88be23→583530c"
+      ],
+      "seconds": 2.2
+    }
+  ]
+}
