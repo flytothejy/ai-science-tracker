@@ -1,0 +1,99 @@
+{
+ "topic": "quantum-computing",
+ "window": "2026-10-01/2026-10-24",
+ "method": "WebSearch/WebFetch only; ~8 searches, ~17 fetches. Several primary pages (quantinuum.com blog/press, whitehouse.gov, hpcwire, phys.org) could not be fetched, so details come from secondary write-ups and are flagged.",
+ "developments": [
+  {
+   "date": "2026-10-19",
+   "who": "Quantinuum",
+   "what": "Helios trapped-ion machine, color-code logical memory at distances 3/5/7 (up to 37 physical qubits per logical qubit): 99.9995% logical fidelity (~5 errors per million), ~10x better than the company's September Helix-code result; reported error suppression factor ~12 per distance step (logical gates ~9).",
+   "why_it_matters": "Clear below-threshold scaling with distance on commercial hardware; supports the Apollo 2029 fault-tolerance target. Caveats: vendor-reported, not peer reviewed; memory-style metric, not a full universal computation; the 'teraquop' extrapolation (distance ~21) is a projection; post-selection status not confirmed in sources I could read.",
+   "source_url": "https://www.quantinuum.com/blog/quantinuum-closes-in-on-one-million-error-free-operations",
+   "secondary_urls": ["https://quantumzeitgeist.com/quantinuum-five-errors-million-helios-quantum/", "https://coloradobiz.com/quantinuum-broomfield-record-low-quantum-error-rate/", "https://www.gssquantum.com/briefings/2026-10-19"],
+   "significance": "high"
+  },
+  {
+   "date": "2026-10-15",
+   "who": "Google Quantum AI (Gidney, Shutty, Jones et al.)",
+   "what": "Science paper: experimental magic state cultivation on Willow, ~40x error reduction vs uncultivated states, T-state fidelity >= 0.9999, ~8% of attempts retained (post-selected), grafted from distance-3 color code into distance-5 surface code.",
+   "why_it_matters": "First hardware demonstration of the cheap magic-state method that cuts a major fault-tolerance overhead (earlier estimates: up to ~95% of machine capacity). Post-selection with 8% yield and small scale limit immediate practicality; the 40x is relative to uncultivated states, not other distillation methods.",
+   "source_url": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/magic-state-cultivation-quantum-computing/",
+   "secondary_urls": ["https://www.researchgate.net/publication/415923451_Magic_state_cultivation_on_a_superconducting_quantum_processor"],
+   "significance": "high"
+  },
+  {
+   "date": "2026-10-08",
+   "who": "DARPA Quantum Benchmarking Initiative",
+   "what": "Atom Computing, Diraq, IBM and IonQ advance to QBI Stage C (joining Microsoft and PsiQuantum from US2QC). Quantinuum, QuEra, Xanadu, Nord Quantique, Photonic, Quantum Motion and SQC remain in Stage B, not eliminated.",
+   "why_it_matters": "Independent government vetting of utility-scale plans; Stage C is 'plans to proof'. Notable that Quantinuum and QuEra were not in this cohort. Read as a screening milestone, not a performance result.",
+   "source_url": "https://www.datacenterdynamics.com/en/news/darpa-announces-four-companies-advancing-to-final-stage-of-its-quantum-benchmarking-initiative/",
+   "secondary_urls": ["https://www.hpcwire.com/2026/10/07/atom-computing-diraq-ibm-and-ionq-advance-to-darpa-qbi-stage-c/"],
+   "significance": "medium"
+  },
+  {
+   "date": "2026-10-12",
+   "who": "Quantinuum with JPMorgan Chase et al. (Perlin et al.), published in a APS journal",
+   "what": "End-to-end fault-tolerant QAOA and HHL runs on H2/Helios with the [[7,1,3]] Steane code; largest QAOA used 12 logical qubits (97 physical, 2,132 two-qubit gates); logical T gate infidelity reported ~2.6e-3.",
+   "why_it_matters": "Among the largest logical-level algorithm executions to date, but performance only 'better than random', uses post-selection/repeat-until-success, and the sources I read have inconsistent T-gate figures; check paper before citing numbers.",
+   "source_url": "http://link.aps.org/doi/10.1103/gnq3-c2df",
+   "secondary_urls": ["https://quantumzeitgeist.com/quantinuum-quantum-algorithms-scale-physical-qubits/"],
+   "significance": "medium"
+  },
+  {
+   "date": "2026-10-13",
+   "who": "RIKEN",
+   "what": "Silicon spin qubits: single-qubit gate fidelity >99.99% with three qubits driven in parallel on a five-qubit array sharing one microwave line (others ~99.9%).",
+   "why_it_matters": "Reduces a known crosstalk/scaling risk for spin qubits; academic, incremental, single-qubit gates only.",
+   "source_url": "https://phys.org/news/2026-10-silicon-qubits-surpass-gate-fidelity.html",
+   "date_note": "Reported Oct 2026; exact date approximate (covered Oct 17-19).",
+   "significance": "low"
+  },
+  {
+   "date": "2026-10 (week of Oct 10-17)",
+   "who": "Riverlane/NVIDIA; Alice & Bob/NVIDIA; IBM Research",
+   "what": "Decoder and QEC-tooling results: GPU-accelerated decoder calibration (~65x), parallel GPU decoding of LDPC-cat codes via NVQLink, AI-agent-designed decoder hardware for the [[144,12,12]] bivariate bicycle code (52x faster HLS estimates).",
+   "why_it_matters": "Real-time decoding is a practical bottleneck for QEC; incremental engineering, mostly vendor claims.",
+   "source_url": "https://quantumzeitgeist.com/quantum-zeitgeist-weekly-digest-october-17-2026/",
+   "significance": "low"
+  },
+  {
+   "date": "2026-10 (digest Oct 17)",
+   "who": "MIT/Harvard (Zhou, Lukin groups)",
+   "what": "Compact codes encoding more than one logical qubit per two physical data qubits on reconfigurable neutral-atom arrays, distance 12 (principles published Sept 2026 per the digest).",
+   "why_it_matters": "High-rate codes cut overhead if realized; date and experimental vs theoretical status unclear from the secondary source, needs verification.",
+   "source_url": "https://quantumzeitgeist.com/ultracold-atoms-quantum-error-correction-zhous/",
+   "significance": "low"
+  }
+ ],
+ "not_found": [
+  "No new quantum-advantage claim by a major lab and no classical rebuttal dated within Oct 1-24 found. The Flatiron tensor-network rebuttal of D-Wave and D-Wave's response are from ~May 2026, outside the window.",
+  "No major vendor roadmap change found in window (IBM Starling/Quantinuum Apollo 2029 targets unchanged; QuEra 1,000 logical qubits by 2029 and IonQ 2M qubits by 2030 are restatements/targets).",
+  "Policy: reported US administration 2028 quantum-for-science target (October fact sheet) and DOE eight priority applications; could not fetch the primary source, so not rated as a technical development."
+ ],
+ "overhyped": [
+  {
+   "claim": "Quantinuum '99.9995%' and 'approaching one million error-free operations'",
+   "reason": "Logical memory fidelity per round under vendor measurement, not a million-gate computation; extrapolations (teraquop at distance ~21, 30x fewer qubits) are projections; not peer reviewed or independently reproduced. The real news is the clean ~12x per-distance suppression."
+  },
+  {
+   "claim": "ORCA PT-3 'first quantum computer built for commercial quantum advantage' and its 12x speedup over its predecessor",
+   "reason": "Speedup is relative to ORCA's own previous system, not the best classical solver; no classical baseline shown; marketing framing."
+  },
+  {
+   "claim": "Google magic state cultivation '40x error reduction'",
+   "reason": "Measured against uncultivated states, with ~8% post-selection yield and small-scale demo; a real milestone but not a 40x improvement over existing distillation."
+  },
+  {
+   "claim": "'Is Quantinuum now ahead of Google?' / vendor-hosted 'independent study' showing Quantinuum outperforming superconducting systems",
+   "reason": "Comparisons are across different codes, distances and metrics, and the study was hosted on Quantinuum's own blog (could not verify authorship); Lambda 12 vs 1.56 compares different architectures."
+  },
+  {
+   "claim": "LLM-designed circuits (Anthropic/Harvard/QuEra) cutting FeMoco gate count to ~340M",
+   "reason": "Resource-estimate improvement on paper, not a hardware result; counts are still far beyond current devices."
+  },
+  {
+   "claim": "IonQ '2 million qubits by 2030' and QuEra '1,000 logical qubits by 2029'",
+   "reason": "Roadmap targets coupled to financing announcements, not demonstrated capability."
+  }
+ ]
+}
