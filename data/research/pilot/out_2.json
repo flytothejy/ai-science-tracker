@@ -1,0 +1,27 @@
+{
+  "candidate_id": "erdos:570:became_solved:2026-01-16",
+  "is_ai_contribution": false,
+  "contribution": "none",
+  "outcome": "n/a",
+  "ai_systems": [],
+  "humans": ["Stijn Cambie", "Andrea Freschi", "Patryk Morawski", "Kalina Petrova", "Alexey Pokrovskiy"],
+  "erdos_problems": [570],
+  "claim_date": "2026-01-15",
+  "status": "claimed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": false,
+    "peer_reviewed": false,
+    "prior_literature": [],
+    "disputes": []
+  },
+  "evidence": [
+    {"url": "https://arxiv.org/abs/2601.10238v1", "supports": "arXiv paper (submitted 2026-01-15) by five human authors proving R(C_k,H) <= 2m + floor((k-1)/2) for large m; no AI/LLM assistance mentioned"},
+    {"url": "https://www.erdosproblems.com/forum/thread/570", "supports": "Problem 570 marked proved; odd k>=7 credited to Cambie-Freschi-Morawski-Petrova-Pokrovskiy; no AI involvement mentioned in thread"},
+    {"url": "https://www.erdosproblems.com/forum/thread/blog:3", "supports": "Blog post by co-author describing human proof developed in a Sparse Graph Coalition Ramsey session; AI mentioned only in unrelated comments"}
+  ],
+  "summary_ko": "에르되시 문제 #570(홀수 길이 사이클 대 일반 그래프의 Ramsey 수 상한)이 2026년 1월 Cambie, Freschi, Morawski, Petrova, Pokrovskiy 5명의 인간 연구자 논문(arXiv 2601.10238)으로 해결되어 사이트에서 'proved'로 바뀌었습니다. 논문, 포럼 스레드, 저자 블로그 어디에도 AI 기여는 언급되지 않아 AI 기여 사례가 아닌 것으로 분류했습니다. 다만 논문 본문 전체의 사사(acknowledgment)는 확인하지 못했고, 동료 심사나 Lean 검증은 확인되지 않았습니다.",
+  "confidence": "medium",
+  "searches_used": 3,
+  "fetches_used": 5
+}

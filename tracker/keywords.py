@@ -81,9 +81,15 @@ CLAIM_RE = re.compile(
 )
 
 
+LAB_SOURCES = {"openai_news", "deepmind_blog"}
+
+
 def tier(c):
     if c.get("source") == "erdos_db":
         return "S"  # status signal
     if c.get("erdos_numbers") or CLAIM_RE.search(c.get("title", "")):
+        return "A"
+    # first-party lab announcements about mathematics are always worth full research
+    if c.get("source") in LAB_SOURCES and re.search(r"math|proof|theorem", c.get("title", ""), re.I):
         return "A"
     return "B"

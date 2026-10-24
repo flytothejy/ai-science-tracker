@@ -1,0 +1,31 @@
+{
+  "candidate_id": "erdos:281:became_solved:2026-01-19",
+  "is_ai_contribution": true,
+  "contribution": "1b_alongside_literature",
+  "outcome": "full",
+  "ai_systems": ["GPT-5.2 Pro"],
+  "humans": ["Neel Somani", "Terence Tao", "KoishiChan"],
+  "erdos_problems": [281],
+  "claim_date": "2026-01-17",
+  "status": "expert_confirmed",
+  "verification": {
+    "expert_confirmation": [
+      {"name": "Terence Tao", "url": "https://aihola.com/article/gpt-5-2-erdos-281-already-solved"}
+    ],
+    "lean": false,
+    "peer_reviewed": false,
+    "prior_literature": [
+      "Davenport and Erdős (1936), found by forum user KoishiChan (via https://aihola.com/article/gpt-5-2-erdos-281-already-solved)",
+      "Rogers' theorem in Halberstam and Roth (1966); combined with the 1936 paper it essentially solves the problem (same source)"
+    ],
+    "disputes": ["Result later found to follow from existing literature, so it is not novel; Tao reportedly puzzled that Erdős did not notice this (secondary report)"]
+  },
+  "evidence": [
+    {"url": "https://aihola.com/article/gpt-5-2-erdos-281-already-solved", "supports": "Somani submitted #281 to GPT-5.2 Pro on 2026-01-17; Tao verified within a day; ergodic-theory proof; later found in prior literature (Davenport-Erdős 1936, Rogers via Halberstam-Roth 1966)"},
+    {"url": "https://the-decoder.com/gpt-5-2-pro-solves-another-erdos-problem-while-a-new-database-reveals-most-attempts-still-fail/", "supports": "Somani solved #281 with GPT-5.2 Pro; Tao called it perhaps the most unambiguous instance of AI solving an open problem and the proof 'rather different' from earlier ones"}
+  ],
+  "summary_ko": "2026년 1월 17일 Neel Somani가 GPT-5.2 Pro로 에르되시 문제 #281의 증명을 얻었고, Terence Tao가 하루 안에 검토해 에르고딕 이론(하르 측도, 버코프 정리)을 쓴 새로운 증명이라고 평가했다. 그러나 이후 포럼에서 Davenport-Erdős(1936)와 Rogers 정리(1966)로 사실상 이미 해결된 문제임이 밝혀져 '기존 문헌과 겹친 AI 결과'로 분류된다. 데이터베이스는 'proved (Lean)'으로 표기하지만, 이 문제의 Lean 증명 링크는 확인하지 못했고 erdosproblems.com 원문은 접근이 막혀 2차 보도에 의존했다.",
+  "confidence": "medium",
+  "searches_used": 2,
+  "fetches_used": 5
+}

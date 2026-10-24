@@ -1,0 +1,26 @@
+{
+  "candidate_id": "arxiv:2601.22365v3",
+  "is_ai_contribution": true,
+  "contribution": "1d_collaboration",
+  "outcome": "partial",
+  "ai_systems": ["GPT-5", "Gemini 3 Pro"],
+  "humans": ["Yisi Ke", "Tianyu Huang", "Yankai Shu", "Di He", "Jingchu Gai", "Liwei Wang"],
+  "erdos_problems": [],
+  "claim_date": "2026-01-29",
+  "status": "peer_reviewed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": false,
+    "peer_reviewed": true,
+    "prior_literature": ["Previous best Steiner ratio lower bound 0.824 by Chung & Graham (1985), as cited in the paper (https://arxiv.org/html/2601.22365v1)"],
+    "disputes": []
+  },
+  "evidence": [
+    {"url": "https://arxiv.org/html/2601.22365v1", "supports": "LLM-generated lemmas plus hand-designed search space and Mathematica/branch-and-bound checking certify a Steiner ratio lower bound of 0.8559 (prior 0.824); authors manually checked lemmas; no Lean; GPT-5 and Gemini 3 Pro tested as backbones; code on GitHub"},
+    {"url": "https://icml.cc/virtual/2026/poster/65517", "supports": "Listed as a poster at ICML 2026 (implies acceptance at a refereed venue)"}
+  ],
+  "summary_ko": "LLM(GPT-5, Gemini 3 Pro)이 규칙 제약형 기하 보조정리를 코드로 생성하고 사람이 설계한 탐색 공간과 branch-and-bound 검증을 결합해, Gilbert-Pollak(슈타이너 비) 추측의 하한을 기존 0.824에서 0.8559로 높였다. 추측(약 0.866) 자체는 여전히 미해결이며(부분 결과), 저자들이 보조정리를 수작업으로 검증했고 Lean 형식화는 없다. ICML 2026 포스터로 게재되어 동료심사 venue에 올랐으나 외부 전문가의 공개 검증은 확인하지 못했다.",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 3
+}

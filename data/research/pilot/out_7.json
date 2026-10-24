@@ -1,0 +1,26 @@
+{
+  "candidate_id": "arxiv:2601.01235v1",
+  "is_ai_contribution": true,
+  "contribution": "1d_collaboration",
+  "outcome": "full",
+  "ai_systems": ["AlphaEvolve"],
+  "humans": ["Jordan Ellenberg", "Nicolas Libedinsky", "David Plaza", "José Simental", "Geordie Williamson", "Adam Zsolt Wagner (acknowledged, not coauthor)"],
+  "erdos_problems": [],
+  "claim_date": "2026-01-03",
+  "status": "claimed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": false,
+    "peer_reviewed": false,
+    "prior_literature": [],
+    "disputes": []
+  },
+  "evidence": [
+    {"url": "https://arxiv.org/html/2601.01235v1", "supports": "Five authors (Ellenberg, Libedinsky, Plaza, Simental, Williamson); AlphaEvolve searched for permutations with large KL d-invariant, humans explained the pattern and proved it generalizes to all n (n=2^m gives hypercube of dimension m*2^(m-1)); A. Z. Wagner credited with essential contributions; no Lean mentioned in the text read."},
+    {"url": "https://mathinstitutes.org/highlights/a-massive-hypercube-hidden-in-the-bruhat-order-found-by-ai", "supports": "ICERM highlight (written by coauthor Libedinsky) states AlphaEvolve repeatedly produced the same digit-balanced permutations, and the human authors recognized the pattern, generalized it and wrote full proofs; not an independent source."}
+  ],
+  "summary_ko": "Ellenberg, Williamson 등 5인의 수학자가 Google DeepMind의 AlphaEvolve로 큰 Kazhdan–Lusztig d-불변량을 갖는 순열을 탐색했고, AI가 낸 패턴을 사람이 일반화해 n이 2의 거듭제곱일 때 차원 O(n log n)의 Bruhat 구간 초입방체를 증명했다. AI는 패턴 발견을 맡고 증명은 사람이 한 협업 사례이며, 아직 동료심사·Lean 검증·외부 전문가 확인은 확인하지 못했다(저자 본인들의 글만 확인).",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 2
+}

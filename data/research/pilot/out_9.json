@@ -1,0 +1,27 @@
+{
+  "candidate_id": "openai_news:https://openai.com/index/sharing-ai-progress-in-mathematics",
+  "is_ai_contribution": true,
+  "contribution": "1a_standalone",
+  "outcome": "unverified",
+  "ai_systems": ["OpenAI internal frontier model (unnamed in the announcement)"],
+  "humans": [],
+  "erdos_problems": [],
+  "claim_date": "2026-10-06",
+  "status": "claimed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": true,
+    "peer_reviewed": false,
+    "prior_literature": [],
+    "disputes": ["Per a secondary source (braindetox.kr, citing the repo history): an Oct 7 sign error in 'Algebraicity of Weil classes on split abelian eightfolds' led to 3 withdrawals and 14 revisions; no external-expert disputes documented. I could not open the GitHub repo myself."]
+  },
+  "evidence": [
+    {"url": "https://openai.com/index/sharing-ai-progress-in-mathematics/", "supports": "OpenAI release (Oct 6, updated Oct 15, 2026) of many new results from an internal frontier model; many proofs formalized in Lean; published at github.com/openai/math; avg ~3 hours ChatGPT Pro-equivalent compute; no Erdos problems or individual researchers named."},
+    {"url": "https://braindetox.kr/en/posts/openai_722_math_research_manuscripts_2026.html", "supports": "Secondary: 722 manuscripts in 372 families released Oct 6; 719 after 3 withdrawals; roughly 300 of 719 top-line results formalized in Lean (~42%); results at varying verification stages; no outside-expert reactions documented."},
+    {"url": "https://pulse2.com/openai-shares-new-ai-generated-results-across-mathematics/", "supports": "Secondary: confirms internal frontier model, GitHub release, partial Lean formalization, IAS advisory group consulted; does not mention Erdos problems."}
+  ],
+  "summary_ko": "OpenAI가 2026-10-06 내부 프런티어 모델이 만든 수학 결과 모음을 github.com/openai/math에 공개했다. 2차 출처 기준 722편(719편 유지, 372개 계열)이며 Lean 형식화는 약 300/719(약 42%)에 그치고 나머지는 검증 단계가 제각각이다. 동료심사나 외부 전문가의 공개 확인은 확인되지 않았고, 부호 오류로 3편 철회 및 14편 수정이 있었다. 에르되시 문제 번호는 확인하지 못했다.",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 6
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "erdos:224:lean_verified:2026-01-14",
+  "is_ai_contribution": true,
+  "contribution": "2b_formalization",
+  "outcome": "full",
+  "ai_systems": ["GPT-5.2 Thinking", "\"CodeX\" agent (not confirmed to be OpenAI Codex)"],
+  "humans": ["Unnamed commenter from SpringSense Innovation Institute"],
+  "erdos_problems": [224],
+  "claim_date": "2026-01-14",
+  "status": "claimed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": false,
+    "peer_reviewed": false,
+    "prior_literature": ["Danzer and Grunbaum 1962 [DaGr62] proved the general case; reproduced in Aigner-Ziegler, Proofs from The Book"],
+    "disputes": []
+  },
+  "evidence": [
+    {"url": "https://www.erdosproblems.com/forum/thread/224?embed=1", "supports": "Forum thread: Lean 4/Mathlib formalization of the Danzer-Grunbaum result, mainly AI-generated (GPT-5.2 Thinking sketch, agent removed sorrys), human only orchestrated; problem page marked 'verified in Lean'; original proof is Danzer-Grunbaum 1962."}
+  ],
+  "summary_ko": "Erdős 문제 #224(R^d의 2^d+1개 점에는 둔각 삼각형이 존재)는 1962년 Danzer-Grünbaum이 이미 증명한 결과이며, 이번 변경은 그 증명의 Lean 4/Mathlib 형식화가 완료되어 사이트에 'Lean 검증'으로 표시된 것이다. 포럼 글에 따르면 GPT-5.2 Thinking이 증명 스케치와 Lean 골격을 만들고 에이전트('CodeX')가 sorry를 하나씩 제거했으며 사람은 주로 조율만 했다. 다만 Lean 코드 저장소 링크와 전문가의 명시적 검증은 직접 확인하지 못했고, 날짜(2026-01-14)는 수집 데이터 기준이다.",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 2
+}

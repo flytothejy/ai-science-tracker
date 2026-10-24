@@ -1,0 +1,26 @@
+{
+  "candidate_id": "arxiv:2601.22401v3",
+  "is_ai_contribution": true,
+  "contribution": "1c_building_on_literature",
+  "outcome": "partial",
+  "ai_systems": ["Aletheia (Gemini Deep Think based math research agent)"],
+  "humans": ["Tony Feng", "Quoc V. Le", "Thang Luong", "Kevin Barreto", "Carl Schildkraut", "Carlo Pagano", "Sergei Gukov"],
+  "erdos_problems": [652, 1051, 654, 935, 1040, 397, 659, 1089, 333, 591, 705, 992, 1105],
+  "claim_date": "2026-01-29",
+  "status": "claimed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": true,
+    "peer_reviewed": false,
+    "prior_literature": ["Erdős-1089 answered in a 1981 paper by Bannai and Bannai (per v2 of the paper)", "Erdős-333, 591, 705, 992, 1105: answers already published (literature identification)", "Erdős-397, 659, 1089: independent rediscoveries of later-found literature solutions", "Erdős-652 reduces immediately to existing literature"],
+    "disputes": ["Authors themselves report 137 of 200 graded candidates fundamentally flawed and only 13 meaningfully correct", "Authors flag risk of 'subconscious plagiarism'; Erdős-1089 described as a likely case", "Social media claim of a GPT-5.2 Pro solution to Erdős-333 was corrected by the team", "Erdős-935 reclassified in v3 from novel to independent rediscovery"]
+  },
+  "evidence": [
+    {"url": "https://arxiv.org/abs/2601.22401v3", "supports": "25 authors; v3 (5 Feb 2026) reports 13 problems: 5 novel autonomous, 8 already in literature; no journal ref listed; v3 reclassifies Erdős-935"},
+    {"url": "https://arxiv.org/pdf/2601.22401v2", "supports": "Aletheia run on 700 open problems Dec 2-9 2025; per-problem breakdown (v2 numbers); Lean 4 formalization of Erdős-1051 by Barreto; error rates and subconscious plagiarism discussion"}
+  ],
+  "summary_ko": "Google DeepMind 등 25명의 저자가 Gemini Deep Think 기반 수학 연구 에이전트 Aletheia로 Bloom의 Erdős 문제 데이터베이스 중 'Open' 700개를 평가하고, 인간 전문가가 검증하여 13개 문제를 다뤘다(v3 기준 5개는 새로운 자율 해결, 8개는 기존 문헌에서 이미 해결됨). 검토한 후보 200개 중 137개가 근본적으로 틀렸고 의미 있게 맞은 것은 13개뿐이며, 'Open' 상태는 난이도보다 무명성 때문이라고 결론 내렸다. Erdős-1051은 Lean 4로 형식화되었으나(v2 기준) 학술지 심사는 거치지 않은 프리프린트이며, 외부 전문가의 개별 확인은 확인하지 못했다.",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 3
+}

@@ -1,0 +1,26 @@
+{
+  "candidate_id": "arxiv:2601.16849v1",
+  "is_ai_contribution": true,
+  "contribution": "1d_collaboration",
+  "outcome": "unverified",
+  "ai_systems": ["FunSearch (Co-FunSearch variant)", "open-mistral-nemo", "gpt-4.1-nano", "gpt-4.1-mini"],
+  "humans": ["Henri Nikoleit", "Ankit Anand", "Anurag Murty Naredla", "Heiko Röglin"],
+  "erdos_problems": [],
+  "claim_date": "2026-01-23",
+  "status": "claimed",
+  "verification": {
+    "expert_confirmation": [],
+    "lean": false,
+    "peer_reviewed": false,
+    "prior_literature": [],
+    "disputes": []
+  },
+  "evidence": [
+    {"url": "https://arxiv.org/abs/2601.16849v1", "supports": "arXiv preprint (cs.LG, cs.DS), submitted 2026-01-23, by Nikoleit, Anand, Naredla, Röglin; human-LLM collaboration with FunSearch; no venue stated."},
+    {"url": "https://arxiv.org/html/2601.16849v1", "supports": "Co-FunSearch built on FunSearch with open-mistral-nemo/gpt-4.1 models; humans simplified and generalized outputs; new lower bounds: hierarchical k-median ~1.618 (previously none), Best-Fit random-order bin packing 1.5 (was 1.3), Nemhauser-Ullmann knapsack super-polynomial (open question of Röglin 2020), generalized gasoline 4.65 (was 2.0); no Lean mentioned."}
+  ],
+  "summary_ko": "Bonn 대학과 Google DeepMind 연구진이 FunSearch(LLM 기반 진화적 탐색)의 출력을 사람이 단순화·일반화하여 계층적 k-median, Best-Fit 빈 패킹, 배낭 문제(Nemhauser-Ullmann), 일반화된 gasoline 문제에서 휴리스틱의 새로운 하한(적대적 사례)을 제시한 인간-AI 협업 논문이다. 증명은 논문에 포함되어 있으나 사람과 AI의 정확한 역할 분담은 명시되지 않았고, 아직 arXiv 프리프린트 단계이며 Lean 검증이나 외부 전문가 확인은 확인하지 못했다. 에르되시 문제와는 무관하다.",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 3
+}

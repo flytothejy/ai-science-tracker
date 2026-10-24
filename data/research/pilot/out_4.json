@@ -1,0 +1,26 @@
+{
+  "candidate_id": "arxiv:2601.07421v5",
+  "is_ai_contribution": true,
+  "contribution": "1a_standalone",
+  "outcome": "full",
+  "ai_systems": ["GPT-5.2 Pro", "Aristotle (Harmonic)", "ChatGPT"],
+  "humans": ["Kevin Barreto", "Boris Alexeev", "Nat Sothanaphan", "KoishiChan", "Terence Tao", "Carl Pomerance"],
+  "erdos_problems": [728],
+  "claim_date": "2026-01-06",
+  "status": "formally_verified",
+  "verification": {
+    "expert_confirmation": ["Terence Tao (per the writeup acknowledgements: vouched for the proof's autonomous status) - https://arxiv.org/html/2601.07421v5", "Carl Pomerance (per the #729 forum thread: results follow fairly easily from his 2015 ideas, no earlier printed work known) - https://www.erdosproblems.com/forum/thread/729?embed=1"],
+    "lean": true,
+    "peer_reviewed": false,
+    "prior_literature": ["No prior literature resolving #728 found as of the writeup (https://arxiv.org/html/2601.07421v5). Related work: Pomerance 2015 on divisors of the central binomial coefficient; Erdos-Graham-Ruzsa-Straus 1975 (problem origin)."],
+    "disputes": ["Early dispute over whether the second Aristotle output used a human observation; Barreto stated no human observation was given and it was then treated as autonomous (https://arxiv.org/html/2601.07421v5)."]
+  },
+  "evidence": [
+    {"url": "https://arxiv.org/html/2601.07421v5", "supports": "Writeup by Nat Sothanaphan: GPT-5.2 Pro produced the informal argument and Aristotle the Lean proof (Jan 6, 2026), operated by Kevin Barreto; Lean file Erdos728b.lean; no prior resolution literature found; Tao vouched for autonomy."},
+    {"url": "https://www.erdosproblems.com/forum/thread/729?embed=1", "supports": "Related #729 thread (#728 argument adapted, marked PROVED (LEAN)); Pomerance said results follow fairly easily from his 2015 paper, so new but within expert reach."}
+  ],
+  "summary_ko": "Erdős 문제 #728(계승 나눗셈의 로그 간격 현상)을 GPT-5.2 Pro가 비형식 증명을 만들고 Harmonic의 Aristotle이 Lean 증명을 생성해 Kevin Barreto가 운용하는 방식으로 2026년 1월 6일 사실상 AI 단독으로 해결했다. 이 논문은 그 Lean 증명을 Nat Sothanaphan이 사람이 읽을 수 있게 정리한 글이며, Tao 등이 자율성을 확인했고 선행 문헌은 발견되지 않았다. 다만 Pomerance는 자신의 2015년 아이디어에서 비교적 쉽게 따라 나오는 결과라고 평했고, 논문 자체는 아직 심사를 거치지 않았다.",
+  "confidence": "medium",
+  "searches_used": 1,
+  "fetches_used": 4
+}

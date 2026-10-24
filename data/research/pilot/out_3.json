@@ -1,0 +1,17 @@
+{
+  "candidate_id": "erdos:834:became_solved:2026-01-01",
+  "is_ai_contribution": false,
+  "contribution": "none",
+  "outcome": "n/a",
+  "ai_systems": [],
+  "humans": [],
+  "erdos_problems": [834],
+  "claim_date": "2026-01-01",
+  "status": "claimed",
+  "verification": {"expert_confirmation": [], "lean": false, "peer_reviewed": false, "prior_literature": [], "disputes": []},
+  "evidence": [],
+  "summary_ko": "Erdős 문제 #834가 2026-01-01경 'solved'로 바뀐 것이 수집되었으나, erdosproblems.com의 문제 페이지·포럼·이력 페이지에 접근할 수 없어(허용 목록 외) 누가 어떻게 풀었는지, AI가 관여했는지 확인하지 못했다. 검색에서도 #834와 AI를 연결하는 출처를 찾지 못했으므로 AI 기여로 분류할 근거가 없다(미확인).",
+  "confidence": "low",
+  "searches_used": 3,
+  "fetches_used": 4
+}
