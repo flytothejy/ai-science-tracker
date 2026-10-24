@@ -1,0 +1,116 @@
+{
+  "run_id": "2026-10-23_2026-10-24_daily",
+  "since": "2026-10-23",
+  "until": "2026-10-24",
+  "ran_at": "2026-10-24T22:43:17+00:00",
+  "environment": "github-actions",
+  "candidates_total": 0,
+  "tiers": {
+    "S": 0,
+    "A": 0,
+    "B": 0
+  },
+  "sources": [
+    {
+      "source": "arxiv",
+      "ok": true,
+      "requests": 2,
+      "status_counts": {
+        "200": 2
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 0,
+      "candidates": 0,
+      "notes": [
+        "math_x_ai: totalResults=0",
+        "ai_x_openproblems: totalResults=0"
+      ],
+      "seconds": 9.2
+    },
+    {
+      "source": "openai_news",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 1318,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2015-12-11"
+      ],
+      "seconds": 0.2
+    },
+    {
+      "source": "deepmind_blog",
+      "ok": false,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [
+        "parse error https://deepmind.google/blog/rss.xml: not well-formed (invalid token): line 1, column 0"
+      ],
+      "items_seen": 0,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: none",
+        "BACKFILL GAP: feed does not reach back to 2026-10-23"
+      ],
+      "seconds": 0.2
+    },
+    {
+      "source": "quanta",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 5,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2026-10-15"
+      ],
+      "seconds": 0.1
+    },
+    {
+      "source": "tao_blog",
+      "ok": true,
+      "requests": 5,
+      "status_counts": {
+        "200": 4,
+        "404": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 34,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2026-10-02"
+      ],
+      "seconds": 1.6
+    },
+    {
+      "source": "erdos_db",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 1221,
+      "candidates": 0,
+      "notes": [
+        "no previous snapshot; diff starts next run"
+      ],
+      "seconds": 0.9
+    }
+  ]
+}
