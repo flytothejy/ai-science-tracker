@@ -89,7 +89,7 @@
    "level": "연구 수준 문제 10개, 미발표 연구에서 출제",
    "verification": "expert_confirmed (출제자 채점)",
    "url": "https://www.scientificamerican.com/article/first-proof-is-ais-toughest-math-test-yet-the-results-are-mixed",
-   "note_ko": "OpenAI는 자체 6~이상이 정답일 가능성이 높다고 주장했으나 출제진이 정답으로 인정한 것은 9·10번 2개. 외부 전문가 검토는 당시 진행 중."
+   "note_ko": "OpenAI 수석과학자는 10개 중 6개가 정답일 가능성이 높다고 밝혔으나 출제진이 정답으로 인정한 것은 9·10번 2개. 외부 전문가 검토는 당시 진행 중."
   },
   {
    "id": "first_proof_batch2",
@@ -192,7 +192,7 @@
    "status": "claimed",
    "verification": "company_claim (+ Lean 증명 공개, 독립 검토 없음)",
    "url": "https://openai.com/index/ten-advances-in-mathematics/",
-   "note_ko": "10개 결과(구 쌓기, 코드, 비소피크 군, Connes 강직성 반증, 퍼머넌트 하한, 양자 병렬 반복, CVP 근사 난이도, Ehrhart 부피 추측, 에르되시 183·146·180 포함). Lean 4 증명 저장소 openai/ten-proofs(직접 열람은 못함), 비용 약 $2,000(회사 추정). 페이지에 게시 날짜가 명시되지 않아 날짜는 제3자 보도(Channel Insider 2026-08-04, 'Saturday' 발표) 기준."
+   "note_ko": "10개 결과(고차원 구 채우기, 코드, 비소피크 군, Connes 강직성 반증, 퍼머넌트 하한, 양자 병렬 반복, CVP 근사 난이도, Ehrhart 부피 추측, 에르되시 183·146·180 포함). Lean 4 증명 저장소 openai/ten-proofs(직접 열람은 못함), 비용 약 $2,000(회사 추정). 페이지에 게시 날짜가 명시되지 않아 날짜는 제3자 보도(Channel Insider 2026-08-04, 'Saturday' 발표) 기준."
   },
   {
    "id": "frontiermath_erdos",
@@ -246,6 +246,6 @@
   "github.com/openai/ten-proofs, arXiv 2605.22763 원문, arXiv 2601.22401, aihola 기사는 이번에 직접 열람하지 않음(저장소 시범조사 자료 또는 2차 보도에 의존)",
   "OpenAI 발표 페이지에 게시일 미기재",
   "teorth 에르되시 위키는 판단 근거로 쓰지 않음",
-  "기준일 이후인 OpenAI 10월 6일 수학 원고 공개와 Science 게재(AlphaProof Nexus)는 제외"
+  "기준일 이후 자료는 사용하지 않음(OpenAI 10월 6일 공개 포함)"
  ]
 }
