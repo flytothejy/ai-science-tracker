@@ -1,0 +1,145 @@
+{
+  "since": "2026-10-01",
+  "until": "2026-10-24",
+  "ran_at": "2026-10-24T10:28:21+00:00",
+  "environment": "github-actions",
+  "topics": {
+    "ai-math": {
+      "candidates": 211,
+      "sources": [
+        {
+          "source": "ai-math:arxiv",
+          "ok": true,
+          "requests": 1,
+          "status_counts": {
+            "200": 1
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 23,
+          "candidates": 23,
+          "notes": []
+        },
+        {
+          "source": "ai-math:news",
+          "ok": true,
+          "requests": 8,
+          "status_counts": {
+            "200": 8
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 146,
+          "candidates": 120,
+          "notes": []
+        },
+        {
+          "source": "ai-math:feeds",
+          "ok": true,
+          "requests": 3,
+          "status_counts": {
+            "200": 3
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 1428,
+          "candidates": 68,
+          "notes": []
+        }
+      ]
+    },
+    "quantum-computing": {
+      "candidates": 773,
+      "sources": [
+        {
+          "source": "quantum-computing:arxiv",
+          "ok": true,
+          "requests": 1,
+          "status_counts": {
+            "200": 1
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 197,
+          "candidates": 197,
+          "notes": []
+        },
+        {
+          "source": "quantum-computing:news",
+          "ok": true,
+          "requests": 12,
+          "status_counts": {
+            "200": 12
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 616,
+          "candidates": 576,
+          "notes": [
+            "cap hit: '양자컴퓨터' 2026-10-01..2026-10-07",
+            "cap hit: '양자컴퓨터' 2026-10-08..2026-10-14",
+            "cap hit: '양자컴퓨터' 2026-10-15..2026-10-21"
+          ]
+        },
+        {
+          "source": "quantum-computing:feeds",
+          "ok": true,
+          "requests": 1,
+          "status_counts": {
+            "200": 1
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 100,
+          "candidates": 0,
+          "notes": []
+        }
+      ]
+    },
+    "solid-state-battery": {
+      "candidates": 486,
+      "sources": [
+        {
+          "source": "solid-state-battery:arxiv",
+          "ok": true,
+          "requests": 1,
+          "status_counts": {
+            "200": 1
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 7,
+          "candidates": 7,
+          "notes": []
+        },
+        {
+          "source": "solid-state-battery:news",
+          "ok": true,
+          "requests": 8,
+          "status_counts": {
+            "200": 8
+          },
+          "retries": 0,
+          "failures": [],
+          "items_seen": 500,
+          "candidates": 479,
+          "notes": [
+            "cap hit: '전고체 배터리' 2026-10-01..2026-10-07",
+            "cap hit: '전고체 배터리' 2026-10-15..2026-10-21"
+          ]
+        },
+        {
+          "source": "solid-state-battery:feeds",
+          "ok": false,
+          "requests": 0,
+          "status_counts": {},
+          "retries": 0,
+          "failures": [],
+          "items_seen": 0,
+          "candidates": 0,
+          "notes": []
+        }
+      ]
+    }
+  }
+}
