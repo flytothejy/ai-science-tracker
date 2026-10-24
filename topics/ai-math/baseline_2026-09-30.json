@@ -1,0 +1,251 @@
+{
+ "topic": "ai-math",
+ "as_of": "2026-09-30",
+ "headline_ko": "2026-09-30 기준 AI는 이름 있는 미해결 문제를 실제로 풀기 시작했지만(에르되시 단위거리 추측 반증이 전문가 9인 검증 확인, OpenAI Astra의 10개 결과와 DeepMind AlphaProof Nexus의 에르되시 9문제는 Lean 증명까지 공개), 동료심사를 통과한 것은 확인된 바 없고 성공률은 여전히 낮으며(에르되시 문제 시도당 약 1~2%, FrontierMath Erdős 68문제 중 벤치마크 2개) 쉬운 문제·선행문헌 재발견 비중이 크다.",
+ "metrics": [
+  {
+   "id": "notable_problems_resolved.peer_reviewed",
+   "value": 0,
+   "unit": "문제(확인된 건수)",
+   "who": "전체",
+   "date": "2026-09-30",
+   "level": "AI 1차 기여, 이름 있는 미해결 문제",
+   "verification": "peer_reviewed",
+   "url": "https://axios.com/2026/05/26/axiom-ai-math-journal",
+   "note_ko": "Axiom은 AI 생성 증명이 담긴 논문이 '5개 유력 저널'에 게재됐다고 밝혔으나(2026-05-26 Axios) 저널명·논문명이 공개되지 않아 확인 불가이므로 0으로 둔다(unconfirmed 5건). ICML 2026 포스터로 채택된 슈타이너 비 하한 개선(Gilbert-Pollak, 0.824→0.8559)은 AI 협업이지만 추측 자체는 미해결인 부분 결과라 이 집계에서 제외."
+  },
+  {
+   "id": "notable_problems_resolved.expert_confirmed",
+   "value": 1,
+   "unit": "문제",
+   "who": "OpenAI 내부 추론 모델 / 검증: Alon, Bloom, Gowers, Litt, Sawin, Shankar, Tsimerman, Wang, Wood",
+   "date": "2026-05-20",
+   "level": "1a_standalone (에르되시 평면 단위거리 추측 반증)",
+   "verification": "expert_confirmed",
+   "url": "https://arxiv.org/abs/2605.20695",
+   "note_ko": "AI 생성 반례를 수학자 9명이 '사람이 검증한 요약본'(arXiv 2605.20695)으로 재작성. Lean 형식화는 언급 없음, 저널 게재 미확인. 지수 δ는 원 증명에서 명시되지 않음(Sawin 개선 δ=0.014 예고). 원 발표: https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+  },
+  {
+   "id": "notable_problems_resolved.formally_verified",
+   "value": 21,
+   "unit": "결과(상한, 중복·변형 포함)",
+   "who": "Axiom(1) + Harmonic/OpenAI(#728, 1) + DeepMind AlphaProof Nexus(에르되시 9) + OpenAI Astra(10)",
+   "date": "2026-09-30",
+   "level": "Lean 증명 공개; 진술이 원 문제와 일치하는지 독립 확인은 건별로 다름",
+   "verification": "formally_verified (건별 단서 있음)",
+   "url": "https://www.theneuron.ai/explainer-articles/from-erdos-to-axiom-the-open-problems-ai-has-actually-solved/",
+   "note_ko": "Fel 추측(Axiom, 2026-02-03, Lean/Mathlib), 에르되시 #728(2026-01, Aristotle Lean; 이후 Pomerance가 기존 아이디어로 쉽게 따라 나온다고 평가), Nexus 9개(2026-05, 일부는 원 문제의 변형·하위 질문), Astra 10개(2026-08-01, 회사 자체 공개, 동료심사·외부 전문가 논평 없음). 형식 검증은 '진술 충실성'과 '신규성'을 보장하지 않음. 21은 단순 합산이며 서로 난이도가 다름."
+  },
+  {
+   "id": "claims_pending",
+   "value": 10,
+   "unit": "주장(핵심 집계)",
+   "who": "OpenAI (Astra 10개 결과)",
+   "date": "2026-08-01",
+   "level": "mass_release (10개, Lean 증명 동반)",
+   "verification": "company_claim + Lean 증명",
+   "url": "https://www.channelinsider.com/ai/news-openai-astra-math-advances/",
+   "note_ko": "동료심사 없음, 외부 수학자의 진술 충실성·중요성 확인 대기(Channel Insider 2026-08-04). 이 외에 검증 대기: Aletheia 에르되시 13문제 논문(선행문헌 8건·신규 5건 자체 분류, 저널 미확인), Nexus 9개(저널 게재 미확인), Axiom 논문 다수(arXiv 8편, 심사 중)."
+  },
+  {
+   "id": "erdos_resolved_ai",
+   "value": 50,
+   "unit": "문제(대략)",
+   "who": "Terence Tao 발언(Dwarkesh 팟캐스트), 2차 보도",
+   "date": "2026-04-11",
+   "level": "에르되시 문제, AI 1차 기여 해결 추정",
+   "verification": "unconfirmed (2차 보도; 1차 출처 미열람)",
+   "url": "https://amp.en.hvylya.net/news/1983-ai-solves-50-erdos-problems-then-hits-a-wall-nobody-expected",
+   "note_ko": "Tao 추산 약 50개, 남은 약 600개, 일괄 시도 시 문제당 성공률 약 1~2%, '이긴 것만 고른 수치'라는 단서와 쉬운 문제·선행문헌 재발견 비중 큼. 4월 이후 추가분(Nexus 9, Astra 3, FrontierMath Erdős 최소 2~5)은 중복 가능성이 있어 합산하지 않음."
+  },
+  {
+   "id": "erdos_ai_success_rate_nexus",
+   "value": 2.5,
+   "unit": "% (9/353 시도 문제)",
+   "who": "Google DeepMind AlphaProof Nexus",
+   "date": "2026-05-25",
+   "level": "Lean으로 형식화된 에르되시 미해결 353문제",
+   "verification": "paper_preprint (arXiv 2605.22763)",
+   "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/",
+   "note_ko": "시도 대상이 Lean 형식화가 된 문제로 한정, 일부는 변형. OEIS 추측은 492개 중 44개(약 9%). 문제당 추론비용 수백 달러."
+  },
+  {
+   "id": "frontiermath_erdos_benchmark",
+   "value": 3,
+   "unit": "% (2/68, 1회 시도)",
+   "who": "GPT-6 Astra(공개 전) 최고; 공개 모델(GPT-5.6 Sol, GPT-5.5, Claude Fable 5/5.1)은 0%",
+   "date": "2026-09-01",
+   "level": "Bloom이 고른 의미 있는 에르되시 미해결 68문제, 문제당 $300/72시간",
+   "verification": "company_claim 아님 — 제3자(Epoch AI) 측정, 해법 검증 방식은 페이지에 상세 없음",
+   "url": "https://epoch.ai/latest/announcing-frontiermath-erdos",
+   "note_ko": "벤치마크 외 대형 예산 시도에서는 68개 중 5개(총 약 $22만). Bloom은 2026-08 기준 이 수준 문제 3~5개를 AI가 풀었다고 추정."
+  },
+  {
+   "id": "first_proof_batch1",
+   "value": 2,
+   "unit": "문제/10 (출제자 판정 정답)",
+   "who": "First Proof 출제진(Abouzaid, Williams 등 11명) 대 LLM들",
+   "date": "2026-02-14",
+   "level": "연구 수준 문제 10개, 미발표 연구에서 출제",
+   "verification": "expert_confirmed (출제자 채점)",
+   "url": "https://www.scientificamerican.com/article/first-proof-is-ais-toughest-math-test-yet-the-results-are-mixed",
+   "note_ko": "OpenAI는 자체 6~이상이 정답일 가능성이 높다고 주장했으나 출제진이 정답으로 인정한 것은 9·10번 2개. 외부 전문가 검토는 당시 진행 중."
+  },
+  {
+   "id": "first_proof_batch2",
+   "value": 7,
+   "unit": "문제/10 (한 시스템 이상이 통과)",
+   "who": "ChatGPT 5.5 Pro 및 대학 팀 하니스 3종, 전문가 30명 채점",
+   "date": "2026-06-10",
+   "level": "연구 수준 문제 10개, 제출 39건 채점",
+   "verification": "expert_confirmed",
+   "url": "https://arxiv.org/abs/2606.18119",
+   "note_ko": "2건은 대폭 수정 필요 등급, 4번(거리기하)은 진전 없음. 심사위원은 인용 누락·오류, 어려운 단계 얼버무림을 자주 지적."
+  }
+ ],
+ "milestones_or_stages": [
+  {
+   "id": "oct2025_openai_erdos_overclaim",
+   "who": "OpenAI (Kevin Weil 게시, 이후 삭제)",
+   "date": "2025-10-19",
+   "status": "claimed",
+   "verification": "refuted (negative)",
+   "url": "https://techcrunch.com/2025/10/19/openais-embarrassing-math/",
+   "note_ko": "GPT-5가 에르되시 문제 10개를 풀었다는 주장이 Bloom에 의해 '심각한 왜곡'으로 반박됨: 모델이 기존 문헌의 해답을 찾아낸 것(문헌 검색 2a). Bubeck도 인정, Hassabis는 '창피하다'고 평가."
+  },
+  {
+   "id": "erdos_728",
+   "who": "GPT-5.2 Pro + Harmonic Aristotle (Barreto 운영, Sothanaphan 정리)",
+   "date": "2026-01-06",
+   "status": "achieved",
+   "verification": "formally_verified",
+   "url": "https://arxiv.org/abs/2601.07421v5",
+   "note_ko": "Lean 증명(Erdos728b.lean), Tao가 자율성 보증. 단 Pomerance는 2015년 아이디어에서 비교적 쉽게 따라 나온다고 평가(쉬운 문제 쏠림 사례). 동료심사 없음."
+  },
+  {
+   "id": "erdos_281",
+   "who": "GPT-5.2 Pro (Neel Somani 제출), Tao 검토",
+   "date": "2026-01-17",
+   "status": "achieved",
+   "verification": "expert_confirmed; prior_literature_found",
+   "url": "https://aihola.com/article/gpt-5-2-erdos-281-already-solved",
+   "note_ko": "저장소 시범조사 자료 기준(2차 보도). 이후 Davenport-Erdős(1936)와 Rogers 정리(1966)로 사실상 기존 문헌에서 해결됨이 밝혀져 '문헌과 겹침'으로 분류. 이 URL은 이번 조사에서 직접 열람하지 않음."
+  },
+  {
+   "id": "aletheia_erdos_batch",
+   "who": "Google DeepMind Aletheia (Gemini Deep Think 기반)",
+   "date": "2026-01-29",
+   "status": "claimed",
+   "verification": "paper_preprint (자체 오류율 보고)",
+   "url": "https://arxiv.org/abs/2601.22401v3",
+   "note_ko": "저장소 시범조사 자료 기준(이번에 직접 열람하지 않음). 700개 문제 시도, 평가된 후보 200개 중 137개가 근본적 오류, 의미 있게 정확한 것 13개(신규 자율 5, 기존 문헌 8). '무의식적 표절' 위험을 저자들이 직접 언급."
+  },
+  {
+   "id": "fel_conjecture",
+   "who": "Axiom Math AxiomProver",
+   "date": "2026-02-03",
+   "status": "achieved",
+   "verification": "formally_verified",
+   "url": "https://arxiv.org/abs/2602.03716",
+   "note_ko": "수치 반군 Fel 추측 증명을 자연어 진술에서 자동 생성·Lean/Mathlib 형식화(논문은 사람이 작성). 동료심사 여부 미확인."
+  },
+  {
+   "id": "unit_distance_disproof",
+   "who": "OpenAI 내부 추론 모델",
+   "date": "2026-05-20",
+   "status": "achieved",
+   "verification": "expert_confirmed",
+   "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+   "note_ko": "에르되시 단위거리 추측(n^(1+o(1)))이 틀렸음을 보인 무한 구성족. 외부 수학자 검증, Gowers는 상위 저널 게재 추천 의견. 형식 검증·저널 게재 없음. 검증이 어렵다는 평(Tsimerman)."
+  },
+  {
+   "id": "alphaproof_nexus",
+   "who": "Google DeepMind AlphaProof Nexus (Gemini 3.1 Pro + Lean)",
+   "date": "2026-05-25",
+   "status": "achieved",
+   "verification": "formally_verified (preprint)",
+   "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/",
+   "note_ko": "에르되시 353문제 중 9개(에르되시 #12의 두 하위 질문 포함, 일부는 변형), OEIS 492개 중 44개, 힐베르트 함수 질문. 56년 된 질문 2개."
+  },
+  {
+   "id": "axiom_journals",
+   "who": "Axiom Math",
+   "date": "2026-05-26",
+   "status": "claimed",
+   "verification": "company_claim (저널명 미공개)",
+   "url": "https://axios.com/2026/05/26/axiom-ai-math-journal",
+   "note_ko": "AI 지원 증명이 담긴 논문이 비공개 저널 5곳에 게재 수락됐다는 회사 주장. 확인된 바 없음."
+  },
+  {
+   "id": "first_proof_2",
+   "who": "First Proof 출제진 / ChatGPT 5.5 Pro 외 3개 팀",
+   "date": "2026-06-10",
+   "status": "achieved",
+   "verification": "expert_confirmed",
+   "url": "https://arxiv.org/abs/2606.18119",
+   "note_ko": "10문제 중 7문제에서 최소 한 시스템이 통과. 5번(확률 편미분방정식)은 사람과 다른 방식으로 정답."
+  },
+  {
+   "id": "openai_astra_ten",
+   "who": "OpenAI 내부 Astra",
+   "date": "2026-08-01",
+   "status": "claimed",
+   "verification": "company_claim (+ Lean 증명 공개, 독립 검토 없음)",
+   "url": "https://openai.com/index/ten-advances-in-mathematics/",
+   "note_ko": "10개 결과(구 쌓기, 코드, 비소피크 군, Connes 강직성 반증, 퍼머넌트 하한, 양자 병렬 반복, CVP 근사 난이도, Ehrhart 부피 추측, 에르되시 183·146·180 포함). Lean 4 증명 저장소 openai/ten-proofs(직접 열람은 못함), 비용 약 $2,000(회사 추정). 페이지에 게시 날짜가 명시되지 않아 날짜는 제3자 보도(Channel Insider 2026-08-04, 'Saturday' 발표) 기준."
+  },
+  {
+   "id": "frontiermath_erdos",
+   "who": "Epoch AI (Bloom 선정 68문제)",
+   "date": "2026-09-01",
+   "status": "achieved",
+   "verification": "expert_confirmed (제3자 벤치마크)",
+   "url": "https://epoch.ai/latest/announcing-frontiermath-erdos",
+   "note_ko": "공개 모델 전부 0%, 공개 전 GPT-6 Astra 2/68 (#74 반증, #126 증명), 대형 예산 시 5/68. 해법의 전문가·형식 검증 방법 세부는 확인 못함."
+  }
+ ],
+ "open_issues": [
+  {
+   "issue_ko": "대량 주장 대비 검증 인력 부족",
+   "status_ko": "Astra 10개는 Lean 컴파일은 되나 외부 수학자의 진술 충실성·신규성 검토 대기. 단위거리 반례는 증명이 어려워 검증에 수학자 9명이 필요했음.",
+   "url": "https://www.channelinsider.com/ai/news-openai-astra-math-advances/"
+  },
+  {
+   "issue_ko": "기존 문헌과의 중복(재발견)",
+   "status_ko": "2025-10 OpenAI 주장 철회, #281(1936·1966 문헌), Aletheia 13개 중 8개가 기존 문헌. 선행문헌 확인이 신규 주장마다 필요.",
+   "url": "https://techcrunch.com/2025/10/19/openais-embarrassing-math/"
+  },
+  {
+   "issue_ko": "형식 검증의 한계",
+   "status_ko": "Lean 증명은 참임을 보일 뿐 진술이 원 문제와 같은지·새로운지는 사람이 확인해야 함(Nexus에서도 '밀도' 정의 교정 사례).",
+   "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/"
+  },
+  {
+   "issue_ko": "귀속·표절 논쟁",
+   "status_ko": "Aletheia 저자들이 '무의식적 표절' 위험 언급. Astra 발표는 인간 저자 자격을 주장하지 않는다고 밝혔으나 원고 작성에 사람이 관여.",
+   "url": "https://openai.com/index/ten-advances-in-mathematics/"
+  },
+  {
+   "issue_ko": "쉬운 문제 쏠림과 낮은 성공률",
+   "status_ko": "Tao는 문제당 성공률 1~2%, 이긴 것만 고른 수치라고 경고. FrontierMath Erdős 공개 모델 0%.",
+   "url": "https://amp.en.hvylya.net/news/1983-ai-solves-50-erdos-problems-then-hits-a-wall-nobody-expected"
+  }
+ ],
+ "watch_next_ko": [
+  "OpenAI Astra 10개 결과의 외부 전문가 검토 결과와 저널 투고 상황",
+  "AlphaProof Nexus 논문의 학술지 게재 여부",
+  "단위거리 반례의 형식 검증 또는 저널 게재, Sawin의 지수 개선 공개",
+  "Axiom이 말한 저널 게재 논문의 실제 명단 공개",
+  "FrontierMath Erdős 재측정 및 Astra 공개 후 공개 모델 성능",
+  "First Proof 이후 배치 결과"
+ ],
+ "searches_used": 15,
+ "fetches_used": 20,
+ "blocked_or_unverified_ko": [
+  "erdosproblems.com 첫 화면은 열렸으나 실시간 수치(2026-10-24 시점)라 기준일 값으로 쓰지 않음",
+  "github.com/openai/ten-proofs, arXiv 2605.22763 원문, arXiv 2601.22401, aihola 기사는 이번에 직접 열람하지 않음(저장소 시범조사 자료 또는 2차 보도에 의존)",
+  "OpenAI 발표 페이지에 게시일 미기재",
+  "teorth 에르되시 위키는 판단 근거로 쓰지 않음",
+  "기준일 이후인 OpenAI 10월 6일 수학 원고 공개와 Science 게재(AlphaProof Nexus)는 제외"
+ ]
+}

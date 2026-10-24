@@ -1,0 +1,40 @@
+{
+  "topic": "solid-state-battery",
+  "as_of": "2026-09-30",
+  "headline_ko": "전고체 배터리는 아직 파일럿·샘플·도로시험 단계이며, 삼성SDI(2027 하반기 울산)·도요타/이데미쓰(2027~28)·BYD(2027 시범, 2030 양산)가 양산 시점을 제시했지만 모두 업체 주장이고, 동료심사를 거친 최고 기록은 여전히 2016~2020년 논문 수준이다.",
+  "metrics": [
+    {"id": "energy_density_gravimetric", "value": 450, "unit": "Wh/kg", "who": "Factorial Energy (Solstice, 40 Ah 리튬금속 + 폴리머 전해질 파우치셀)", "date": "2025-02-25", "level": "pouch_large", "verification": "company_claim", "url": "https://www.plasticstoday.com/automotive-mobility/mercedes-benz-pushes-solid-state-ev-batteries-closer-to-production", "note_ko": "업체 발표치. 독립 검증 미확인. 기사 날짜 기준이며 측정 시점은 불명. 같은 기사에서 Stellantis용 FEST 셀은 390 Wh/kg. 이 값보다 높은 주장(CATL 500 Wh/kg 등)은 2차 매체 보도 또는 목표치라 채택하지 않음."},
+    {"id": "energy_density_volumetric", "value": 900, "unit": "Wh/L", "who": "Samsung SAIT/SRJ (0.6 Ah 파우치 풀셀, Ag-C 음극 + 아지로다이트 황화물)", "date": "2020-03-09", "level": "pouch_lab", "verification": "peer_reviewed", "url": "https://research.samsung.com/research-papers/High-energy-long-cycling-all-solid-state-lithium", "note_ko": "Nature Energy 2020. 900 Wh/L 초과로 기재. 비교 참고: QuantumScape QSE-5(5 Ah) 844 Wh/L 초과는 업체 주장(2025-12-10 기사). 삼성SDI의 '900 Wh/L 이상'은 양산 목표치이며 실측 기록 아님."},
+    {"id": "cycle_life", "value": 1000, "unit": "cycles", "who": "Samsung SAIT/SRJ (0.6 Ah 파우치 풀셀)", "date": "2020-03-09", "level": "pouch_lab", "verification": "peer_reviewed", "url": "https://research.samsung.com/research-papers/High-energy-long-cycling-all-solid-state-lithium", "note_ko": "약 1,000 사이클. 80% 용량 유지 기준인지는 페이지에서 확인하지 못함(미확인). 소형 랩 셀 기록으로 차량용 셀과 직접 비교 불가."},
+    {"id": "electrolyte_conductivity", "value": 25, "unit": "mS/cm", "who": "Kato et al., Tokyo Tech 등 (Li9.54Si1.74P1.44S11.7Cl0.3)", "date": "2016-03-22", "level": "material", "verification": "peer_reviewed", "url": "https://www.titech.ac.jp/english/news/2016/033769", "note_ko": "Nature Energy 2016, 상온 25 mS/cm. 이후 더 높은 값이 있는지는 이번 조사에서 확인하지 못함(미확인). 상온 액체 전해질과 동급 이상의 소재 수준 기록."},
+    {"id": "fast_charge", "value": 12.2, "unit": "min", "who": "QuantumScape (QSE-5, 5 Ah 파우치셀)", "date": "2025-12-10", "level": "pouch_large", "verification": "company_claim", "url": "https://www.electrive.com/2025/12/10/solid-state-batteries-quantumscape-ready-to-launch-its-pilot-line/", "note_ko": "10→80% 12.2분. 업체 주장이며 기사 날짜 기준. 사이클 수명은 해당 기사에 없음."}
+  ],
+  "milestones_or_stages": [
+    {"id": "samsung_sdi", "who": "Samsung SDI", "date": "2026-08-03", "status": "claimed", "verification": "company_claim", "url": "https://battery-news.de/en/2026/08/03/samsung-sdi-plans-mass-production-of-solid-state-batteries-starting-in-2027/", "note_ko": "단계: sop_announced. 수원 파일럿 라인 가동 중, 2027년 하반기 울산 양산 계획, 황화물계 900 Wh/L 이상 목표. 고객사에 샘플 공급(고객 비공개)."},
+    {"id": "toyota_idemitsu", "who": "Toyota / Idemitsu Kosan", "date": "2026-01-29", "status": "claimed", "verification": "company_claim", "url": "https://news.metal.com/newscontent/103751094", "note_ko": "단계: sop_announced (양산 2027~28 공동 추진). 이데미쓰 치바 황화물 전해질 파일럿 플랜트 착공 2026-01-29, 연 수백 톤 규모, 완공 2027 예정."},
+    {"id": "toyota_schedule", "who": "Toyota", "date": "2025-11-07", "status": "claimed", "verification": "company_claim", "url": "https://electrek.co/2025/11/07/toyota-yet-again-delaying-ev-battery-plans/", "note_ko": "첫 전고체 EV는 2028 유지라고 임원이 언급. 과거 2020, 2023, 2026에서 계속 밀린 이력(setback 이력). 후쿠오카 공장은 재차 지연(전고체 직접 계획은 아님)."},
+    {"id": "quantumscape", "who": "QuantumScape", "date": "2025-10-22", "status": "achieved", "verification": "company_claim", "url": "https://www.quantumscape.com/quantumscape-announces-shipment-of-b1-samples-achieving-a-key-annual-goal/", "note_ko": "단계: b_sample. QSE-5 B1 샘플 출하 시작(Ducati V21L 모터사이클, VW 그룹 프로그램). Eagle Line 파일럿 라인은 2026-02 가동식 (electrive 업데이트). 직접 양산은 하지 않고 VW 등 라이선스 파트너 방식."},
+    {"id": "factorial_mercedes", "who": "Factorial Energy / Mercedes-Benz", "date": "2025-09-09", "status": "achieved", "verification": "company_claim", "url": "https://theevreport.com/mercedes-eqs-solid-state-battery-drives-749-miles", "note_ko": "단계: vehicle_test. 개조 EQS가 1회 충전 1,205 km 주행(독일-스웨덴). 보도에 따르면 리튬금속 셀(FEST 기반); InsideEVs는 FEST가 준고체(폴리머)라고 설명하므로 전고체 여부는 불명확. 제3자 검증 확인 못함. 양산 일정 미발표."},
+    {"id": "catl", "who": "CATL", "date": "2026-03-13", "status": "claimed", "verification": "company_claim", "url": "https://www.electrive.com/2026/03/13/catl-makes-progress-on-its-solid-state-battery/", "note_ko": "단계: pilot_line 추정. 황화물계 500 Wh/kg 보도는 특허 공개(WIPO 2026-03-05) 관련 2차 매체 인용으로 CATL 직접 발표 아님. 20 Ah 샘플에서 60 Ah로, 2027 소량 양산을 목표(기술성숙도 4 -> 7~8)."},
+    {"id": "byd", "who": "BYD", "date": "2026-09-13", "status": "claimed", "verification": "company_claim", "url": "https://carnewschina.com/2026/09/13/byd-to-put-solid-state-battery-technology-into-a-vehicle-next-year-executive-confirms/", "note_ko": "단계: vehicle_test 예고. 임원 인터뷰로 2027년 전고체 탑재 모델 시연(소량 약 1,000대 시험) 및 2030년경 대규모 양산. 사양 수치 없음(20/60 Ah 프로토타입, 400 Wh/kg 근접 목표 보도)."},
+    {"id": "farasis", "who": "Farasis Energy", "date": "2025-09-15", "status": "claimed", "verification": "company_claim", "url": "https://carnewschina.com/2025/09/17/solid-state-battery-mercedes-backed-farasis-energy-to-deliver-400-wh-kg-first-gen-sulfide-battery-by-year-end/", "note_ko": "1세대 황화물 셀 400~500 Wh/kg 설계 목표, 2025년 말 소량 납품 계획, 0.2 GWh 파일럿 라인 건설 중. 투자자 문서 기반이며 이후 실제 납품 여부는 이번 조사에서 확인 못함."},
+    {"id": "mass_production_any", "who": "전 업체", "date": "2026-09-30", "status": "not_yet", "verification": "company_claim", "url": "https://battery-news.de/en/2026/08/03/samsung-sdi-plans-mass-production-of-solid-state-batteries-starting-in-2027/", "note_ko": "기준일 현재 전고체 배터리의 mass_production 단계 도달을 확인한 업체는 없음(발표된 가장 빠른 양산 시점은 2027년 하반기)."}
+  ],
+  "open_issues": [
+    {"issue_ko": "제조 비용·수율", "status_ko": "황화물계 셀 비용이 기존 리튬이온의 3~5배라는 보도(2차 매체). Factorial 파일럿 수율 85%, 대형 라인은 95% 이상 필요하다고 회사가 언급.", "url": "https://www.plasticstoday.com/automotive-mobility/mercedes-benz-pushes-solid-state-ev-batteries-closer-to-production"},
+    {"issue_ko": "가압 필요(스택 압력)", "status_ko": "Mercedes 시험차는 공압 액추에이터로 셀 부피 변화 시 접촉 압력을 유지. 압력 요건은 여전히 시스템 설계 제약.", "url": "https://theevreport.com/mercedes-eqs-solid-state-battery-drives-749-miles"},
+    {"issue_ko": "덴드라이트·단락 / 계면 저항", "status_ko": "CATL 특허는 불화리튬을 형성하는 음극 코팅으로 황화물 전해질 불안정을 완화하려는 접근. 해결 여부는 독립 검증 없음.", "url": "https://www.electrive.com/2026/03/13/catl-makes-progress-on-its-solid-state-battery/"},
+    {"issue_ko": "저온 성능", "status_ko": "QuantumScape QSE-5는 -30도까지 동작하도록 설계(설계 목표, 검증 수치 없음).", "url": "https://www.electrive.com/2025/12/10/solid-state-batteries-quantumscape-ready-to-launch-its-pilot-line/"},
+    {"issue_ko": "일정 신뢰성", "status_ko": "도요타 전고체 일정은 2020, 2023, 2026, 2028로 반복 연기된 이력. 양산 발표는 모두 업체 주장.", "url": "https://electrek.co/2025/11/07/toyota-yet-again-delaying-ev-battery-plans/"}
+  ],
+  "watch_next_ko": [
+    "2027년: Idemitsu 치바 파일럿 플랜트 완공 예정",
+    "2027년 하반기: 삼성SDI 울산 전고체 양산 시작 예정",
+    "2027년: BYD 전고체 탑재 차량 시연/소량 시험, CATL 소량 양산 목표",
+    "2027~2028년: 도요타/이데미쓰 전고체 BEV 양산 목표(2028 첫 차량)",
+    "QuantumScape Eagle Line 생산 샘플의 고객(VW/PowerCo 등) 평가 결과 및 독립 검증",
+    "Mercedes/Factorial 도로시험의 양산 적용 결정 여부"
+  ],
+  "searches_used": 11,
+  "fetches_used": 17
+}
