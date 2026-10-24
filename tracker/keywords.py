@@ -70,3 +70,20 @@ def is_candidate(text, require_math=True):
     a = ai_hits(text)
     m = math_hits(text)
     return bool(a) and (bool(m) or not require_math), a, m
+
+
+# Tier A = text that claims a result (worth full agent research); B = everything else (cheap triage)
+CLAIM_RE = re.compile(
+    r"Erd(?:[őöo]|oe)s(?![-–\s]+R[ée]nyi)|conjecture|open problem|unsolved|resolution|resolv|"
+    r"solv(?:e|es|ed|ing)\b|counterexample|disprov|discover|new (?:bound|construction)|"
+    r"(?:lower|upper) bound|case study|breakthrough",
+    re.IGNORECASE,
+)
+
+
+def tier(c):
+    if c.get("source") == "erdos_db":
+        return "S"  # status signal
+    if c.get("erdos_numbers") or CLAIM_RE.search(c.get("title", "")):
+        return "A"
+    return "B"

@@ -112,6 +112,25 @@ def score(since, until, case=None, run_id=None):
              f"{len(status_ai)}건 ({_pct(len(status_ai), len(status_events))}) — 나머지는 2단계가 'AI 무관'으로 걸러내야 함")
     L.append(f"- 텍스트 후보 {len(text_cands)}건 중 에르되시 번호가 명시된 것: {len(text_with_num)}건\n")
 
+    # ---- step 2 cost estimate (assumptions are explicit so they can be revised) ----
+    t = Counter(c.get("tier", "?") for c in cands)
+    S, A, B = t.get("S", 0), t.get("A", 0), t.get("B", 0)
+    TRIAGE_PASS = 0.3          # share of tier-B that Haiku triage forwards to research
+    RESEARCH_USD = 0.17        # Sonnet 5.5 agent: ~5 searches + ~40k in + ~4k out
+    TRIAGE_USD = 0.0003        # Haiku 5.5: ~2k in + ~200 out
+    month = 30 / days
+    research_n = (S + A + B * TRIAGE_PASS) * month
+    cost = research_n * RESEARCH_USD + B * month * TRIAGE_USD
+    L.append("### 2단계 비용 추정 (월 환산)\n")
+    L.append("| 등급 | 의미 | 처리 | 구간 건수 | 월 환산 |")
+    L.append("|---|---|---|---|---|")
+    L.append(f"| S | 에르되시 상태 변화(해결·Lean 검증) | 전체 조사 | {S} | {S * month:.0f} |")
+    L.append(f"| A | 결과 주장 표현이 있는 글 | 전체 조사 | {A} | {A * month:.0f} |")
+    L.append(f"| B | 그 외 AI×수학 글 | 저가 분류 후 {TRIAGE_PASS:.0%}만 조사 | {B} | {B * month:.0f} |")
+    L.append(f"\n- 조사 대상 월 약 **{research_n:.0f}건** × 건당 ${RESEARCH_USD} + 분류 비용 → **월 약 ${cost:.0f}**")
+    L.append("- 가정: 조사 1건 = Sonnet 5.5 에이전트(웹 검색 5회 + 입력 4만·출력 4천 토큰), "
+             "분류 1건 = Haiku 5.5(입력 2천·출력 200 토큰). Batch API를 쓰면 토큰 비용은 절반.\n")
+
     L.append("## 4. 한계\n")
     L.append("- 에르되시 DB의 `last_update`는 문제별 최신 변경만 남아서, 구간 이후 다시 갱신된 문제는 재현에서 빠집니다. "
              "실운영(일일 스냅샷 비교)에서는 이 문제가 없습니다.")

@@ -14,13 +14,14 @@ import time
 from datetime import date, timedelta, datetime, timezone
 
 from .http import SourceLog
+from .keywords import tier
 from .sources import arxiv, openalex, feeds, erdos
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
 
-def run(since, until, daily=False, only=None):
+def run(since, until, daily=False, only=None, with_openalex=False):
     run_id = f"{since}_{until}" + ("_daily" if daily else "")
     logs, cands = [], []
 
@@ -40,7 +41,9 @@ def run(since, until, daily=False, only=None):
               f"seen={d['items_seen']} cand={d['candidates']} {d['notes']} {d['failures'][:2]}", flush=True)
 
     go("arxiv", lambda l: arxiv.collect(since, until, l))
-    go("openalex", lambda l: openalex.collect(since, until, l))
+    # OpenAlex is mostly noise for detection (and pages past 1 need auth); kept for step 3
+    if with_openalex:
+        go("openalex", lambda l: openalex.collect(since, until, l))
     for name in feeds.FEEDS:
         go(name, lambda l, n=name: feeds.collect_one(n, since, until, l))
     snap = os.path.join(DATA, "state", "erdos_snapshot.json") if daily else None
@@ -57,6 +60,7 @@ def run(since, until, daily=False, only=None):
         if c["id"] in ids or c["id"] in seen:
             continue
         ids.add(c["id"])
+        c["tier"] = tier(c)
         uniq.append(c)
 
     os.makedirs(os.path.join(DATA, "candidates"), exist_ok=True)
@@ -71,6 +75,7 @@ def run(since, until, daily=False, only=None):
         "ran_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "environment": "github-actions" if os.environ.get("GITHUB_ACTIONS") else "local",
         "candidates_total": len(uniq),
+        "tiers": {t: sum(1 for c in uniq if c["tier"] == t) for t in "SAB"},
         "sources": logs,
     }
     with open(os.path.join(DATA, "runs", f"{run_id}.json"), "w") as f:
@@ -90,13 +95,14 @@ def main():
     ap.add_argument("--until")
     ap.add_argument("--daily", action="store_true")
     ap.add_argument("--only", nargs="*", help="run only these sources")
+    ap.add_argument("--with-openalex", action="store_true")
     a = ap.parse_args()
     if a.daily:
         today = date.today()
         since, until = (today - timedelta(days=1)).isoformat(), today.isoformat()
     else:
         since, until = a.since, a.until
-    run(since, until, daily=a.daily, only=a.only)
+    run(since, until, daily=a.daily, only=a.only, with_openalex=a.with_openalex)
 
 
 if __name__ == "__main__":

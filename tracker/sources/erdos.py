@@ -74,14 +74,29 @@ def replay_diff(since, until, log):
     old = {q["number"]: q for q in (_norm(p) for p in yaml.safe_load(old_body))}
     new = [_norm(p) for p in yaml.safe_load(new_body)]
     log.notes.append(f"replay diff {a[:7]}→{b[:7]}")
-    out = []
-    for p in new:
-        o = old.get(p["number"])
-        if o is None or o["status"] != p["status"] or o["formal"] != p["formal"]:
-            ev = _event(p, "status_changed")
-            ev["previous"] = {"status": o["status"] if o else None, "formal": o["formal"] if o else None}
-            out.append(ev)
+    out = [ev for p in new if (ev := _transition(old.get(p["number"]), p))]
     return out, len(new)
+
+
+def _solved(state):
+    return bool(state) and state.split()[0] in SOLVED
+
+
+def _transition(o, p):
+    """Only transitions that matter: became solved, or gained a Lean formal proof.
+    New problems and other edits (tags, OEIS, wording) are ignored."""
+    if o is None:
+        return None
+    kind = None
+    if _solved(p["status"]) and not _solved(o["status"]):
+        kind = "became_solved"
+    elif p["formal"] == "Lean" and o["formal"] != "Lean":
+        kind = "lean_verified"
+    if not kind:
+        return None
+    ev = _event(p, kind)
+    ev["previous"] = {"status": o["status"], "formal": o["formal"]}
+    return ev
 
 
 def collect(since, until, log, snapshot_path=None):
@@ -108,10 +123,8 @@ def collect(since, until, log, snapshot_path=None):
                 prev = {int(k): v for k, v in json.load(f).items()}
         if prev:
             for p in probs:
-                old = prev.get(p["number"])
-                if old and (old["status"] != p["status"] or old["formal"] != p["formal"]):
-                    ev = _event(p, "status_changed")
-                    ev["previous"] = {"status": old["status"], "formal": old["formal"]}
+                ev = _transition(prev.get(p["number"]), p)
+                if ev:
                     out.append(ev)
         else:
             log.notes.append("no previous snapshot; diff starts next run")
