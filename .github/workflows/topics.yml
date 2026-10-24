@@ -1,0 +1,39 @@
+name: topics
+
+on:
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Window start (YYYY-MM-DD)"
+        required: true
+      until:
+        description: "Window end (YYYY-MM-DD)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  topics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -m tracker.topics --since "${{ inputs.since }}" --until "${{ inputs.until }}"
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/topics
+          git diff --cached --quiet && exit 0
+          git commit -m "topics: ${{ inputs.since }}..${{ inputs.until }}"
+          git pull --rebase
+          git push

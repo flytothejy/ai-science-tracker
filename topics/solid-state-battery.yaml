@@ -1,0 +1,47 @@
+id: solid-state-battery
+name_ko: 전고체 배터리
+kind: metric            # 상태 = 핵심 수치의 최고 기록 + 상용화 단계
+question: 전고체 배터리는 지금 어디까지 왔나 — 성능 기록은 어디이고, 양산은 언제인가?
+
+# 상태를 구성하는 항목. 모든 기록은 "어떤 수준의 셀에서" 나왔는지 함께 기록한다.
+# 코인셀 실험 기록과 차량용 대형 셀 기록은 같은 숫자라도 의미가 전혀 다르다.
+cell_levels: [material, coin_cell, pouch_lab, pouch_large, automotive_sample, production]
+metrics:
+  - id: energy_density_gravimetric
+    name_ko: 셀 중량 에너지 밀도
+    unit: Wh/kg
+    higher_is_better: true
+  - id: energy_density_volumetric
+    name_ko: 셀 부피 에너지 밀도
+    unit: Wh/L
+    higher_is_better: true
+  - id: cycle_life
+    name_ko: 수명 (용량 80% 유지 사이클)
+    unit: cycles
+    higher_is_better: true
+  - id: electrolyte_conductivity
+    name_ko: 고체 전해질 이온 전도도 (상온)
+    unit: mS/cm
+    higher_is_better: true
+  - id: fast_charge
+    name_ko: 10→80% 충전 시간
+    unit: min
+    higher_is_better: false
+commercialization_stages: [lab, pilot_line, a_sample, b_sample, c_sample, vehicle_test, sop_announced, mass_production]
+open_issues: [덴드라이트·단락, 계면 저항, 가압 필요(스택 압력), 제조 비용·수율, 저온 성능]
+players_watch: [Toyota, Idemitsu, Samsung SDI, LG Energy Solution, SK On, QuantumScape, Solid Power, Factorial, CATL, BYD, Nissan, Honda, ProLogium]
+
+# 상태를 바꾸는 사건
+events:
+  - record            # 같은 셀 수준에서 기존 최고치를 넘는 수치
+  - stage_change      # 업체의 상용화 단계 진전 (샘플 공급, 파일럿 라인 가동, 양산 발표)
+  - replication       # 독립 기관이 기존 주장을 재현·검증
+  - setback           # 일정 연기, 재현 실패, 리콜, 사업 철수
+  - new_approach      # 새로운 전해질 계열·구조로 주요 지표에 의미 있는 진전
+
+verification_levels: [company_claim, paper_preprint, peer_reviewed, independent_test, in_product]
+
+sources:
+  arxiv_query: '(cat:cond-mat.mtrl-sci OR cat:physics.app-ph OR cat:physics.chem-ph) AND (abs:"solid-state battery" OR abs:"solid-state batteries" OR abs:"solid electrolyte" OR abs:"all-solid-state")'
+  news_queries: ["solid-state battery", "전고체 배터리"]
+  feeds: []

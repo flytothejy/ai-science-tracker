@@ -1,0 +1,31 @@
+id: ai-math
+name_ko: AI 수학
+kind: proof             # 상태 = 어떤 문제가 풀렸는가 + 그 풀이의 검증 상태
+question: AI는 수학 연구를 어디까지 하고 있나 — 무엇을 풀었고, 그중 검증된 것은 무엇인가?
+
+# 기존 PoC에서 만든 기여 구분과 상태 사다리를 그대로 쓴다 (prompts/research.md).
+contribution_levels: [1a_standalone, 1b_alongside_literature, 1c_building_on_literature, 1d_collaboration, 2a_literature_search, 2b_formalization, 2c_rewriting, 2d_computation]
+status_ladder: [claimed, expert_confirmed, formally_verified, peer_reviewed]
+negative_status: [disputed, refuted, prior_literature_found, withdrawn]
+metrics:
+  - id: notable_problems_resolved
+    name_ko: 이름 있는 미해결 문제 중 AI가 1차 기여한 해결 수 (검증 수준별)
+  - id: claims_pending
+    name_ko: 검증 대기 중인 주장 수
+  - id: erdos_resolved_ai
+    name_ko: 에르되시 문제 중 AI 기여 해결 수 (참고 — 쉬운 문제가 많다는 점 함께 표기)
+open_issues: [대량 주장 대비 검증 인력 부족, 기존 문헌과의 중복(재발견), 귀속·표절 논쟁, 쉬운 문제 쏠림]
+players_watch: [OpenAI, Google DeepMind, Harmonic, Anthropic, xAI, Meta, ByteDance Seed, Mistral]
+
+events:
+  - claim             # 새 해결 주장
+  - verification      # 전문가 확인, Lean 형식 검증, 저널 게재
+  - negative          # 오류·철회·선행문헌 발견
+  - mass_release      # 대량 공개 (주장 수와 검증 비율을 함께 기록)
+
+verification_levels: [company_claim, paper_preprint, expert_confirmed, formally_verified, peer_reviewed]
+
+sources:
+  arxiv_query: '(cat:math.CO OR cat:math.NT OR cat:math.MG OR cat:math.PR OR cat:math.LO OR cat:math.AG OR cat:math.GM OR cat:cs.AI OR cat:cs.LG) AND (abs:"open problem" OR abs:conjecture OR abs:Erdos) AND (abs:"language model" OR abs:LLM OR abs:GPT OR abs:Gemini OR abs:AlphaProof OR abs:AlphaEvolve OR abs:Aristotle)'
+  news_queries: ["AI solves math problem", "AI proof conjecture"]
+  feeds: ["https://openai.com/news/rss.xml", "https://deepmind.google/blog/rss.xml", "https://terrytao.wordpress.com/feed/"]

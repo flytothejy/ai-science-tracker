@@ -1,0 +1,47 @@
+id: quantum-computing
+name_ko: 양자컴퓨팅
+kind: stage             # 상태 = 이정표 사다리에서 어디까지 왔나 + 핵심 수치
+question: 쓸모 있는 양자컴퓨터는 어디까지 왔나 — 오류 정정은 되는가, 실제 문제에서 고전 컴퓨터를 이겼는가?
+
+# 이정표 사다리. 각 단계는 "누가, 어떤 플랫폼으로, 언제, 어떤 검증 수준으로" 달성했는지 기록한다.
+milestones:
+  - id: below_threshold_qec
+    name_ko: 오류 정정 문턱 아래 동작 (코드 크기를 키우면 논리 오류가 줄어듦)
+  - id: logical_beats_physical
+    name_ko: 논리 큐비트가 물리 큐비트보다 오류가 적음
+  - id: logical_qubits_100
+    name_ko: 논리 큐비트 100개 수준
+  - id: fault_tolerant_algorithm
+    name_ko: 오류 정정된 상태로 의미 있는 알고리즘 실행
+  - id: verified_useful_advantage
+    name_ko: 실용적 문제에서 검증된 양자 우위 (고전 반박이 나오지 않음)
+metrics:
+  - id: logical_qubits
+    name_ko: 논리 큐비트 수
+    higher_is_better: true
+  - id: logical_error_per_cycle
+    name_ko: 사이클당 논리 오류율
+    higher_is_better: false
+  - id: two_qubit_fidelity
+    name_ko: 2큐비트 게이트 충실도
+    higher_is_better: true
+  - id: physical_qubits
+    name_ko: 물리 큐비트 수 (참고 지표 — 단독으로는 진전의 척도가 아님)
+    higher_is_better: true
+platforms: [superconducting, trapped_ion, neutral_atom, photonic, spin, topological]
+open_issues: [오류 정정 오버헤드, 고전 시뮬레이션에 의한 우위 반박, 확장성(배선·냉각), 실용 알고리즘 부재]
+players_watch: [Google Quantum AI, IBM, Quantinuum, IonQ, Microsoft, QuEra, Atom Computing, PsiQuantum, Pasqal, Rigetti, Alice & Bob, AWS]
+
+events:
+  - milestone         # 사다리의 새 단계를 처음 달성했다는 주장
+  - record            # 핵심 수치 최고 기록
+  - advantage_claim   # 양자 우위 주장
+  - classical_rebuttal  # 고전 알고리즘으로 기존 우위 주장을 따라잡거나 반박
+  - roadmap_change    # 로드맵 발표·연기
+
+verification_levels: [company_claim, paper_preprint, peer_reviewed, independent_reproduction, unrebutted_6m]
+
+sources:
+  arxiv_query: 'cat:quant-ph AND (abs:"logical qubit" OR abs:"logical qubits" OR abs:"error correction" OR abs:"quantum advantage" OR abs:"quantum supremacy" OR abs:"fault-tolerant" OR abs:"below threshold")'
+  news_queries: ["quantum computing logical qubits", "quantum advantage", "양자컴퓨터"]
+  feeds: ["https://research.google/blog/rss/"]
