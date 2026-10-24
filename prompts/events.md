@@ -21,7 +21,10 @@ Inputs:
      or milestone, or a setback/rebuttal that lowers a recorded claim), `no` (consistent with
      what the baseline already says, or below the recorded bests), or `check` (could change
      the state but the facts in the items are not enough).
-   - which baseline field it touches, old value → new value.
+   - which baseline field it touches, old value → new value. `field` MUST be exactly one
+     `id` from the baseline's `metrics` or `milestones_or_stages` (e.g. `logical_error_per_cycle`,
+     `mass_production_any`) — no prefixes, no notes. If the event concerns something the baseline
+     has no entry for (a new company, a new metric), use `new:<snake_case_id>` and explain in `title_ko`.
 4. **Verify the `yes` and `check` events.** Open the primary source with WebSearch/WebFetch
    (company release, paper, journal). Set the verification level from the topic file. Never
    upgrade a company announcement to `independent_test` without an independent source.

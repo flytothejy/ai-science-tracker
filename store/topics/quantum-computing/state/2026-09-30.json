@@ -1,0 +1,214 @@
+{
+  "id": "quantum-computing@2026-09-30",
+  "topic": "quantum-computing",
+  "as_of": "2026-09-30",
+  "previous": null,
+  "headline_ko": "오류 정정 문턱 아래 동작과 '논리 큐비트가 물리 큐비트보다 낫다'는 단계는 동료심사까지 통과했고, 논리 큐비트 70~96개 규모와 오류 정정 상태 알고리즘 실행은 아직 회사 발표·프리프린트 수준이며, 반박 없이 6개월 이상 버틴 실용 문제의 양자 우위는 아직 없다.",
+  "plain": {
+    "one_line_ko": null,
+    "why_it_matters_ko": null,
+    "how_trustworthy_ko": null,
+    "perspectives": {}
+  },
+  "metrics": [
+    {
+      "id": "logical_qubits",
+      "value": 96,
+      "unit": "논리 큐비트(최대 보고치)",
+      "who": "Harvard 주도 팀 / QuEra (중성원자)",
+      "date": "2025-11-23",
+      "level": "논리 큐비트 최대 96개로 알고리즘 실행 (Nature 논문; 오류 검출형인지 정정형인지, 코드 거리는 확인하지 못함)",
+      "verification": "peer_reviewed",
+      "event": null,
+      "evidence": [
+        "ev:80574f0bed47"
+      ],
+      "note_ko": "QuEra 보도자료(2025-12-09)가 Nature 논문(s41586-025-09848-5)을 인용. Nature 원문은 접근 차단되어 열어보지 못했고 논문 본문 수치는 미확인. 규모는 큰 반면 코드 거리가 작아 '정정'의 질은 별도 확인이 필요."
+    },
+    {
+      "id": "logical_qubits_ibm_70",
+      "value": 70,
+      "unit": "논리 큐비트",
+      "who": "IBM + University of Chicago",
+      "date": "2026-07-30",
+      "level": "논리 2큐비트 연산 2,415개, 논리 T 게이트 468개, 약 15분 실행. 물리 큐비트 수와 코드는 보도자료에 없음",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:65cfe86eefdf"
+      ],
+      "note_ko": "arXiv:2607.25941 프리프린트가 있으나 열람은 차단됨. 유효 논리 오류율이 물리 오류율의 약 1/10이라고 주장. 독립 검증·고전 반박 보고는 확인하지 못함."
+    },
+    {
+      "id": "logical_qubits_quantinuum_48",
+      "value": 48,
+      "unit": "오류 정정 논리 큐비트 (물리 98개, 2:1 인코딩)",
+      "who": "Quantinuum (Helios, 이온 트랩)",
+      "date": "2025-11-05",
+      "level": "98 물리 큐비트에서 48개 논리 큐비트. 별도로 94개 논리 큐비트 GHZ 상태가 break-even 이상이라고 보도됨(94개는 오류 검출 수준일 가능성, 미확인)",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:26d39cb34c56"
+      ],
+      "note_ko": "회사 블로그와 언론 보도에 근거. 논리 오류율 수치는 해당 기사에 없음. 2026-09-24 Infleqtion이 30개 논리 큐비트(80 원자, 오류 검출 + 사후선별)를 발표했으나 논문 없이 회사 발표뿐이라 순위에서 제외."
+    },
+    {
+      "id": "logical_error_per_cycle",
+      "value": 0.00143,
+      "unit": "사이클당 논리 오류율 (거리 7 표면 코드)",
+      "who": "Google Quantum AI (Willow, 초전도)",
+      "date": "2024-08-24",
+      "level": "거리 7, 101 큐비트 사용(105 큐비트 칩). 거리를 2 키울 때마다 오류가 약 2.14배 감소(Λ=2.14). 가장 좋은 물리 큐비트 대비 수명 2.4배",
+      "verification": "peer_reviewed",
+      "event": null,
+      "evidence": [
+        "ev:46b5fa6174fa"
+      ],
+      "note_ko": "arXiv 프리프린트 날짜. Nature 게재 사실은 APS Physics 해설(Preskill, Viola 등 독립 전문가 언급)로 확인. 로드맵 목표(1e-12/사이클)와는 아직 9자릿수 격차."
+    },
+    {
+      "id": "two_qubit_fidelity",
+      "value": 99.99,
+      "unit": "%",
+      "who": "IonQ (전자식 큐비트 제어, 이온 트랩)",
+      "date": "2025-10-21",
+      "level": "연구실 프로토타입의 2큐비트 게이트. 상용 시스템 아님",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:f7c626ccd8e3"
+      ],
+      "note_ko": "이전 기록은 Oxford Ionics의 99.97%(2024). 프리프린트/심사 여부와 측정 조건은 기사에서 확인되지 않음. 전 쌍 연결 상용기 기준으로는 Quantinuum Helios 99.921%(2025-11-05, company_claim)."
+    },
+    {
+      "id": "two_qubit_fidelity_commercial",
+      "value": 99.921,
+      "unit": "%",
+      "who": "Quantinuum (Helios, 98 큐비트)",
+      "date": "2025-11-05",
+      "level": "모든 큐비트 쌍 평균, 상용 시스템",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:26d39cb34c56"
+      ],
+      "note_ko": "단일 큐비트 99.9975%. 회사 벤치마크 기준이며 독립 평가는 아님."
+    },
+    {
+      "id": "physical_qubits",
+      "value": 3000,
+      "unit": "물리 큐비트 (원자 배열, 2시간 이상 연속 운용)",
+      "who": "Harvard/MIT 주도 팀 (QuEra 협력, 중성원자)",
+      "date": "2025-12-09",
+      "level": "원자 보충으로 연속 운용. 3,000개 전체가 계산에 쓰인 것은 아님",
+      "verification": "peer_reviewed",
+      "event": null,
+      "evidence": [
+        "ev:80574f0bed47"
+      ],
+      "note_ko": "참고 지표. 날짜는 QuEra 보도자료 날짜이며 Nature 게재일은 확인하지 못함. 같은 해 Willow 105, Helios 98 큐비트로 큐비트 수 자체는 진전의 척도가 아님."
+    }
+  ],
+  "stages": [
+    {
+      "id": "below_threshold_qec",
+      "who": "Google Quantum AI (Willow, 표면 코드); 이어서 Harvard/QuEra 448 원자 중성원자 구조",
+      "date": "2024-08-24 (프리프린트), 2024-12 (Nature)",
+      "status": "achieved",
+      "verification": "peer_reviewed",
+      "event": null,
+      "evidence": [
+        "ev:2bed73f19254"
+      ],
+      "note_ko": "코드 거리 3->5->7로 키울 때 논리 오류가 매번 약 절반으로 감소. Harvard/QuEra 팀의 Nature 논문(2025-11)도 문턱 아래 성능을 주장하며, 근거는 보도자료 및 QCR 요약. 독립 재현은 확인하지 못함."
+    },
+    {
+      "id": "logical_beats_physical",
+      "who": "Google Quantum AI (Willow); Quantinuum (Helios)",
+      "date": "2024-12",
+      "status": "achieved",
+      "verification": "peer_reviewed",
+      "event": null,
+      "evidence": [
+        "ev:46b5fa6174fa"
+      ],
+      "note_ko": "Google 거리 7 논리 큐비트의 수명이 최고 물리 큐비트의 2.4배. Quantinuum의 break-even 이상 주장은 company_claim."
+    },
+    {
+      "id": "logical_qubits_100",
+      "who": "최대 보고치: QuEra/Harvard 96개, IBM/UChicago 70개, Quantinuum 48개",
+      "date": "2026-07-30 기준",
+      "status": "not_yet",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:80574f0bed47"
+      ],
+      "note_ko": "100개 이상을 보고한 사례는 확인하지 못함. 96개는 인코딩 방식과 오류율 맥락이 달라 '오류가 충분히 낮은 100개'와는 거리가 있음. Infleqtion 목표는 2028년 100개."
+    },
+    {
+      "id": "fault_tolerant_algorithm",
+      "who": "IBM + University of Chicago",
+      "date": "2026-07-30",
+      "status": "claimed",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:65cfe86eefdf"
+      ],
+      "note_ko": "70 논리 큐비트에서 논리 T 게이트 468개를 포함한 회로 실행. 다만 실행한 것은 난수 회로 샘플링의 구조화된 변형이라 '의미 있는 알고리즘'인지는 논쟁 여지가 큼. QuEra 논리 매직 상태 증류(Nature, 2025)는 구성 요소 수준의 선행 결과."
+    },
+    {
+      "id": "verified_useful_advantage",
+      "who": "Google Quantum AI (Quantum Echoes), IBM/UChicago가 우위를 주장",
+      "date": "2025-10-22 (Google), 2026-07-30 (IBM)",
+      "status": "not_yet",
+      "verification": "company_claim",
+      "event": null,
+      "evidence": [
+        "ev:732f8c4c8326"
+      ],
+      "note_ko": "Google은 Nature에 실린 OTOC 실험으로 특정 과제에서 13,000배 빠르다고 주장했으나 과제 자체가 실용 문제는 아니고 NMR 응용은 개념 증명 단계. IBM 결과는 프리프린트이며 독립 도전이 아직 보고되지 않았고 6개월도 지나지 않음. 두 경우 모두 실용적 문제에서 검증된 우위는 아님."
+    }
+  ],
+  "open_issues": [
+    {
+      "issue_ko": "오류 정정 오버헤드",
+      "status_ko": "Google 거리 7 논리 큐비트 1개에 101 물리 큐비트가 필요하고, 목표(1e-12/사이클)까지 약 9자릿수 남음. Quantinuum은 2:1 인코딩을 주장하지만 오류 검출 수준과 정정 수준을 구분해 읽어야 함.",
+      "evidence": [
+        "ev:2bed73f19254"
+      ]
+    },
+    {
+      "issue_ko": "고전 시뮬레이션에 의한 우위 반박",
+      "status_ko": "IBM/UChicago 결과는 회로와 데이터를 Quantum Advantage Tracker에 공개해 외부 도전을 받는 중. 기준일까지 반박·재현 보고는 확인하지 못함. 기준일 이전의 구체적 반박 사례는 이번 조사에서 열어본 출처로 확인하지 못했다.",
+      "evidence": [
+        "ev:65cfe86eefdf"
+      ]
+    },
+    {
+      "issue_ko": "확장성(배선·냉각·모듈 연결)",
+      "status_ko": "IBM은 모듈형 qLDPC 로드맵(Loon 2025, Kookaburra 2026, Cockatoo 2027, Starling 2029: 논리 200개/1억 연산)으로 대응. Kookaburra 2026 이행 여부는 확인하지 못함. QuEra는 원자 보충으로 3,000 큐비트 연속 운용을 보임.",
+      "evidence": [
+        "ev:388e0d844969"
+      ]
+    },
+    {
+      "issue_ko": "실용 알고리즘 부재와 우위 주장의 검증 가능성",
+      "status_ko": "Preskill은 다양한 실용 응용까지는 아직 멀다고 평가. 우위 사례는 랜덤 회로 샘플링·OTOC 같은 벤치마크 과제에 한정됨. Infleqtion 30 논리 큐비트(2026-09-24)는 논문 없이 사후선별 결과이고 30큐비트는 고전으로 계산 가능.",
+      "evidence": [
+        "ev:ae43591547e1"
+      ]
+    }
+  ],
+  "watch_next_ko": [
+    "IBM/UChicago arXiv:2607.25941 및 Quantum Advantage Tracker 회로에 대한 고전 시뮬레이션 반박 시도 (6개월 무반박 기준은 2027-01-30 전후)",
+    "IBM Kookaburra(2026 예정, 첫 모듈형 qLDPC 메모리+논리 연산 프로세서) 공개 여부",
+    "IonQ 256 큐비트 시스템 시연(2026 예정)과 99.99% 게이트의 논문화",
+    "Infleqtion 30 논리 큐비트 전체 논문(회사는 수 주 내 공개를 예고)",
+    "QuEra/Harvard 96 논리 큐비트 결과의 독립 재현, 그리고 100 논리 큐비트 최초 보고",
+    "Google Quantum AI의 Willow 이후 오류 정정 확장(논리 연산, 더 큰 코드 거리) 발표"
+  ],
+  "changed_by": []
+}
