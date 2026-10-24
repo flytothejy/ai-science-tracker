@@ -78,6 +78,12 @@ def replay_diff(since, until, log):
     return out, len(new)
 
 
+def _lean(p):
+    # Schema changed over time: early 2026 marked Lean inside the status string
+    # ("proved (Lean)"); later versions added a separate formal_status field.
+    return p.get("formal") == "Lean" or "(Lean)" in (p.get("status") or "")
+
+
 def _solved(state):
     return bool(state) and state.split()[0] in SOLVED
 
@@ -90,7 +96,7 @@ def _transition(o, p):
     kind = None
     if _solved(p["status"]) and not _solved(o["status"]):
         kind = "became_solved"
-    elif p["formal"] == "Lean" and o["formal"] != "Lean":
+    elif _lean(p) and not _lean(o):
         kind = "lean_verified"
     if not kind:
         return None

@@ -75,6 +75,12 @@ def score(since, until, case=None, run_id=None):
 
     L.append("\n## 2. 정답지 대비 재현율\n")
     L.append(f"- **어떤 경로로든 포착: {caught_any}/{len(gt_nums)} ({_pct(caught_any, len(gt_nums))})**")
+    for label, oc in (("완전 해결", "full"), ("부분 진전", "partial")):
+        nums = {r["number"] for r in gt if r["outcome"] == oc}
+        if oc == "partial":
+            nums -= {r["number"] for r in gt if r["outcome"] == "full"}
+        got = sum(1 for n, _, st, text in rows if n in nums and (st or text))
+        L.append(f"  - {label}: {got}/{len(nums)} ({_pct(got, len(nums))})")
     L.append(f"- 상태 신호(에르되시 DB)로 포착: {caught_status}/{len(gt_nums)} ({_pct(caught_status, len(gt_nums))})"
              " — 'AI 기여' 정보는 없음")
     L.append(f"- 텍스트 소스(논문·블로그)에서 문제 번호까지 포착: {caught_text}/{len(gt_nums)} "
