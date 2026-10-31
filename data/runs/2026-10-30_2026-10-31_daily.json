@@ -1,0 +1,111 @@
+{
+  "run_id": "2026-10-30_2026-10-31_daily",
+  "since": "2026-10-30",
+  "until": "2026-10-31",
+  "ran_at": "2026-10-31T00:04:51+00:00",
+  "environment": "github-actions",
+  "candidates_total": 0,
+  "tiers": {
+    "S": 0,
+    "A": 0,
+    "B": 0
+  },
+  "sources": [
+    {
+      "source": "arxiv",
+      "ok": true,
+      "requests": 5,
+      "status_counts": {
+        "429": 3,
+        "200": 2
+      },
+      "retries": 3,
+      "failures": [],
+      "items_seen": 0,
+      "candidates": 0,
+      "notes": [
+        "math_x_ai: totalResults=0",
+        "ai_x_openproblems: totalResults=0"
+      ],
+      "seconds": 169.0
+    },
+    {
+      "source": "openai_news",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 1340,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2015-12-11"
+      ],
+      "seconds": 0.1
+    },
+    {
+      "source": "deepmind_blog",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 100,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2025-11-20"
+      ],
+      "seconds": 0.2
+    },
+    {
+      "source": "quanta",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 5,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2026-10-23"
+      ],
+      "seconds": 0.3
+    },
+    {
+      "source": "tao_blog",
+      "ok": true,
+      "requests": 5,
+      "status_counts": {
+        "200": 5
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 41,
+      "candidates": 0,
+      "notes": [
+        "oldest item reached: 2026-10-02"
+      ],
+      "seconds": 1.4
+    },
+    {
+      "source": "erdos_db",
+      "ok": true,
+      "requests": 1,
+      "status_counts": {
+        "200": 1
+      },
+      "retries": 0,
+      "failures": [],
+      "items_seen": 1221,
+      "candidates": 0,
+      "notes": [],
+      "seconds": 1.3
+    }
+  ]
+}
