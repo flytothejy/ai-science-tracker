@@ -5,3 +5,4 @@ arxiv:2610.35595v1
 arxiv:2610.35596v1
 arxiv:2610.35645v1
 tao_blog:https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/
+tao_blog:https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/
