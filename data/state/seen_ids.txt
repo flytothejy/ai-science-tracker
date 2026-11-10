@@ -8,3 +8,4 @@ tao_blog:https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-
 tao_blog:https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/
 tao_blog:https://terrytao.wordpress.com/2026/11/04/more-of-my-interviews-and-talks/
 tao_blog:https://terrytao.wordpress.com/2026/11/06/more-posts/
+tao_blog:https://terrytao.wordpress.com/2026/11/09/our-survey-of-early-career-mathematicians/
