@@ -10,3 +10,4 @@ tao_blog:https://terrytao.wordpress.com/2026/11/04/more-of-my-interviews-and-tal
 tao_blog:https://terrytao.wordpress.com/2026/11/06/more-posts/
 tao_blog:https://terrytao.wordpress.com/2026/11/09/our-survey-of-early-career-mathematicians/
 deepmind_blog:https://deepmind.google/blog/introducing-alphaproof-code/
+tao_blog:https://terrytao.wordpress.com/2026/11/13/introducing-mathhelm-a-place-to-discuss-ai-generated-papers/
