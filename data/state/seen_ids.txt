@@ -33,3 +33,7 @@ erdos:625:lean_verified:2026-11-16
 erdos:857:became_solved:2026-10-20
 erdos:1219:lean_verified:2026-09-28
 tao_blog:https://terrytao.wordpress.com/2026/11/23/finite-time-singularity-formation-for-the-three-dimensional-euler-equations/
+arxiv:2611.32052v1
+arxiv:2611.32334v1
+arxiv:2611.31762v1
+arxiv:2611.31811v1
